@@ -26,8 +26,10 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { matters, clients, teamMembers, timeEntries, blogPosts } from '@/lib/demo-data'
+import { matters, clients, teamMembers, timeEntries, articles } from '@/lib/demo-data'
 import { formatDate, getInitials } from '@/lib/utils'
+
+const blogPosts = articles
 
 const stats = [
   {

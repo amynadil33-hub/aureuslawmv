@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { demoServices } from "@/lib/demo-data"
+import { practiceAreas } from "@/lib/demo-data"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -25,6 +25,15 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Plus, Pencil, Trash2, Search, Briefcase } from "lucide-react"
+
+const demoServices = practiceAreas.map((area) => ({
+  id: area.id,
+  title: area.name,
+  description: area.short_description,
+  fullDescription: area.full_description,
+  featured: area.is_featured,
+  visible: area.is_visible,
+}))
 
 export default function AdminServicesPage() {
   const [services, setServices] = useState(demoServices)
