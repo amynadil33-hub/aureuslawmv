@@ -46,8 +46,20 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import { Label } from '@/components/ui/label'
-import { documents, matters, teamMembers } from '@/lib/demo-data'
+import { matters, teamMembers } from '@/lib/demo-data'
 import { formatDate, formatDateTime } from '@/lib/utils'
+
+const documents = matters.map((matter, idx) => ({
+  id: `doc-${idx + 1}`,
+  name: `${matter.matter_number} - Case Summary.pdf`,
+  matter_id: matter.id,
+  category: idx % 2 === 0 ? 'contracts' : 'correspondence',
+  file_type: 'application/pdf',
+  file_size: 140000 + idx * 25000,
+  version: 1,
+  uploaded_by: teamMembers[idx % teamMembers.length]?.id || '1',
+  uploaded_at: new Date(Date.now() - (idx + 1) * 86400000).toISOString(),
+}))
 
 const getFileIcon = (type: string) => {
   if (type.includes('pdf') || type.includes('word') || type.includes('document')) {

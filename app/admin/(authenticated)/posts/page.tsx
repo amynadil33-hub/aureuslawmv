@@ -42,10 +42,16 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { blogPosts, teamMembers } from '@/lib/demo-data'
+import { articles, teamMembers } from '@/lib/demo-data'
 import { formatDate, getInitials } from '@/lib/utils'
 
 type PostStatus = 'all' | 'published' | 'draft' | 'scheduled'
+
+const blogPosts = articles.map((article) => ({
+  ...article,
+  category: article.category?.name || 'General',
+  read_time: article.read_time_minutes,
+}))
 
 export default function AdminPostsPage() {
   const [searchQuery, setSearchQuery] = useState('')

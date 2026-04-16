@@ -9,8 +9,15 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Section, SectionHeader } from '@/components/ui/section'
-import { blogPosts, practiceAreas, teamMembers } from '@/lib/demo-data'
+import { articles, teamMembers } from '@/lib/demo-data'
 import { formatDate } from '@/lib/utils'
+
+const blogPosts = articles.map((article) => ({
+  ...article,
+  featured_image: article.cover_image_url,
+  category: article.category?.name || 'General',
+  read_time: article.read_time_minutes,
+}))
 
 const categories = ['All', ...new Set(blogPosts.map(p => p.category))]
 

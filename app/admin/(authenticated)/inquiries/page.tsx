@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { demoContactSubmissions } from "@/lib/demo-data"
+import { demoConsultationRequests } from "@/lib/demo-data"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -42,6 +42,17 @@ import {
 } from "lucide-react"
 
 type InquiryStatus = "new" | "in_progress" | "resolved" | "archived"
+
+const demoContactSubmissions = demoConsultationRequests.map((request) => ({
+  id: request.id,
+  name: request.full_name,
+  email: request.email,
+  phone: request.phone,
+  subject: request.company_name || "General Inquiry",
+  message: request.message,
+  status: request.status === "reviewed" ? "in_progress" : request.status,
+  createdAt: request.created_at,
+}))
 
 export default function AdminInquiriesPage() {
   const [inquiries, setInquiries] = useState(demoContactSubmissions)
