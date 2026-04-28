@@ -50,11 +50,20 @@ export default function AdminTeamPage() {
   const [positionFilter, setPositionFilter] = useState('all')
   const [statusFilter, setStatusFilter] = useState('all')
 
-  const positions = [...new Set(teamMembers.map(t => t.position))]
+  const normalizedTeamMembers = teamMembers.map((member) => ({
+    ...member,
+    position: member.role_title ?? 'Team Member',
+    practice_areas: member.practice_areas ?? [],
+    is_active: member.is_active ?? member.is_visible ?? true,
+    image_url: member.image_url ?? member.photo_url ?? null,
+  }))
 
-  const filteredMembers = teamMembers.filter(member => {
-    const matchesSearch = member.full_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.email?.toLowerCase().includes(searchQuery.toLowerCase())
+  const positions = [...new Set(normalizedTeamMembers.map((t) => t.position))]
+
+  const filteredMembers = normalizedTeamMembers.filter(member => {
+    const matchesSearch =
+      (member.full_name ?? '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (member.email ?? '').toLowerCase().includes(searchQuery.toLowerCase())
     const matchesPosition = positionFilter === 'all' || member.position === positionFilter
     const matchesStatus = statusFilter === 'all' || 
       (statusFilter === 'active' && member.is_active) ||
@@ -141,7 +150,7 @@ export default function AdminTeamPage() {
               <TableBody>
                 {filteredMembers.map((member, idx) => {
                   const memberPracticeAreas = practiceAreas.filter(p => 
-                    member.practice_areas.includes(p.id)
+                    (member.practice_areas ?? []).includes(p.id)
                   )
                   return (
                     <motion.tr
@@ -263,7 +272,7 @@ export default function AdminTeamPage() {
         <Card>
           <CardContent className="p-4 text-center">
             <p className="text-2xl font-semibold text-navy">
-              {teamMembers.filter(m => m.position.toLowerCase().includes('partner')).length}
+              {normalizedTeamMembers.filter((m) => (m.position ?? '').toLowerCase().includes('partner')).length}
             </p>
             <p className="text-sm text-muted-foreground">Partners</p>
           </CardContent>
@@ -271,7 +280,7 @@ export default function AdminTeamPage() {
         <Card>
           <CardContent className="p-4 text-center">
             <p className="text-2xl font-semibold text-navy">
-              {teamMembers.filter(m => m.position.toLowerCase().includes('associate')).length}
+              {normalizedTeamMembers.filter((m) => (m.position ?? '').toLowerCase().includes('associate')).length}
             </p>
             <p className="text-sm text-muted-foreground">Associates</p>
           </CardContent>
@@ -279,7 +288,7 @@ export default function AdminTeamPage() {
         <Card>
           <CardContent className="p-4 text-center">
             <p className="text-2xl font-semibold text-navy">
-              {teamMembers.filter(m => m.is_active).length}
+              {normalizedTeamMembers.filter((m) => m.is_active).length}
             </p>
             <p className="text-sm text-muted-foreground">Active</p>
           </CardContent>

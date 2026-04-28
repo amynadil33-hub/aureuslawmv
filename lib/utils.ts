@@ -6,22 +6,30 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: string | Date, options?: Intl.DateTimeFormatOptions) {
+  if (!date) return '—'
+  const parsedDate = new Date(date)
+  if (Number.isNaN(parsedDate.getTime())) return '—'
+
   return new Intl.DateTimeFormat('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
     ...options,
-  }).format(new Date(date))
+  }).format(parsedDate)
 }
 
 export function formatDateTime(date: string | Date) {
+  if (!date) return '—'
+  const parsedDate = new Date(date)
+  if (Number.isNaN(parsedDate.getTime())) return '—'
+
   return new Intl.DateTimeFormat('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
     hour: 'numeric',
     minute: '2-digit',
-  }).format(new Date(date))
+  }).format(parsedDate)
 }
 
 export function getInitials(name: string) {
