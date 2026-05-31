@@ -1,11 +1,11 @@
-"use server"
+'use server'
 
-import { redirect } from "next/navigation"
-import { createClient } from "@/lib/supabase/server"
+import { redirect } from 'next/navigation'
+import { createClient } from '@/lib/supabase/server'
 
 export async function login(formData: FormData) {
-  const email = String(formData.get("email"))
-  const password = String(formData.get("password"))
+  const email = String(formData.get('email') ?? '')
+  const password = String(formData.get('password') ?? '')
 
   const supabase = await createClient()
 
@@ -15,8 +15,8 @@ export async function login(formData: FormData) {
   })
 
   if (error) {
-    redirect("/login?error=Invalid login")
+    redirect('/login?error=Invalid%20login')
   }
 
-  redirect("/admin")
+  redirect('/admin')
 }
