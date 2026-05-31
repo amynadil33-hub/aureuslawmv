@@ -137,7 +137,7 @@ export default function AdminLayout({
               Settings
             </Link>
             <Link
-              href="/admin/login"
+              href="/logout"
               className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-stone-light/70 hover:bg-navy hover:text-stone-light transition-colors"
             >
               <LogOut className="h-5 w-5" />
@@ -216,7 +216,7 @@ export default function AdminLayout({
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem asChild>
-                    <Link href="/admin/login" className="text-destructive">
+                    <Link href="/logout" className="text-destructive">
                       Sign Out
                     </Link>
                   </DropdownMenuItem>
