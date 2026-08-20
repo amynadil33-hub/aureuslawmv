@@ -38,29 +38,29 @@ export const firmStats = [
 export const firmValues = [
   {
     title: 'Integrity',
-    description: 'We uphold the highest ethical standards in every interaction, ensuring transparency and honesty in all our dealings.',
+    description: 'We uphold honesty, professionalism, confidentiality, and ethical legal practice in every matter we handle.',
     icon: 'Shield'
   },
   {
-    title: 'Excellence',
-    description: 'We strive for excellence in legal practice, delivering meticulous work product and innovative solutions to complex challenges.',
-    icon: 'Award'
-  },
-  {
-    title: 'Client Focus',
-    description: 'Our clients are at the center of everything we do. We listen, understand, and tailor our approach to meet their unique needs.',
+    title: 'Client Commitment',
+    description: 'We prioritize responsiveness, transparency, and practical legal guidance tailored to each client\'s needs.',
     icon: 'Users'
   },
   {
-    title: 'Local Expertise',
-    description: 'Deep knowledge of Maldivian law and business culture enables us to provide contextually relevant and effective counsel.',
+    title: 'Excellence & Precision',
+    description: 'We approach every matter with diligence, attention to detail, and a commitment to delivering high-quality legal work.',
+    icon: 'Award'
+  },
+  {
+    title: 'Accountability',
+    description: 'We believe in clear communication, responsible practice, and maintaining trust through consistent professional standards.',
     icon: 'MapPin'
   },
 ]
 
 export const heroContent: HeroContent = {
-  headline: 'Strategic Legal Counsel for the Maldives',
-  subheadline: 'Trusted guidance for individuals, businesses, and institutions across every legal challenge.',
+  headline: 'Independent Counsel Driven by Justice',
+  subheadline: 'Principled, practical, and client-focused legal services for individuals, businesses, and institutions across the Maldives.',
   cta_text: 'Book a Consultation',
   cta_link: '/contact/book-consultation'
 }
@@ -82,8 +82,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 1,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -101,8 +101,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 2,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
@@ -120,8 +120,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 3,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '4',
@@ -139,8 +139,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 4,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '5',
@@ -155,11 +155,11 @@ export const practiceAreas: PracticeArea[] = [
     process_steps: null,
     meta_title: null,
     meta_description: null,
-    is_featured: false,
+    is_featured: true,
     is_visible: true,
     sort_order: 5,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '6',
@@ -177,8 +177,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 6,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '7',
@@ -196,8 +196,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: false,
     is_visible: true,
     sort_order: 7,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '8',
@@ -215,8 +215,8 @@ export const practiceAreas: PracticeArea[] = [
     is_featured: false,
     is_visible: true,
     sort_order: 8,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   }
 ]
 
@@ -234,8 +234,8 @@ export const sectors: Sector[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 1,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -250,8 +250,8 @@ export const sectors: Sector[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 2,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
@@ -266,8 +266,8 @@ export const sectors: Sector[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 3,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '4',
@@ -282,8 +282,8 @@ export const sectors: Sector[] = [
     is_featured: false,
     is_visible: true,
     sort_order: 4,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '5',
@@ -298,8 +298,8 @@ export const sectors: Sector[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 5,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   }
 ]
 
@@ -307,199 +307,299 @@ export const teamMembers: TeamMember[] = [
   {
     id: '1',
     profile_id: null,
-    full_name: 'Ahmed Rasheed',
-    slug: 'ahmed-rasheed',
-    role_title: 'Managing Partner',
-    email: 'ahmed.rasheed@aureuslaw.mv',
-    phone: '+960 300 1001',
-    bio: 'Ahmed Rasheed is the founding and managing partner of Aureus Law. With over 20 years of experience in Maldivian law, he has advised multinational corporations, government bodies, and high-net-worth individuals on complex legal matters. Ahmed is recognized as one of the leading corporate lawyers in the Maldives.',
-    education: ['LLM, University of London', 'LLB (Hons), Maldives National University'],
-    admissions: ['Supreme Court of Maldives', 'High Court of Maldives'],
-    languages: ['Dhivehi', 'English', 'Arabic'],
-    years_experience: 20,
-    photo_url: null,
+    full_name: 'Abdul Salaam Arif',
+    slug: 'abdul-salaam-arif',
+    role_title: 'Co-Founder & Managing Partner',
+    email: 'abdulsalaam@aureuslaw.mv',
+    phone: null,
+    bio: 'Abdul Salaam Arif is a leading figure in the Maldivian legal landscape, recognized for his extensive contributions to both the public sector and private legal practice. As Co-Founder and Managing Partner of Aureus Law Firm LLP, he leverages a multi-disciplinary background to provide clients with sophisticated legal solutions in a rapidly evolving regulatory environment.\n\nHis career is marked by high-level appointments that reflect his integrity and legal acumen. He served as Chief Ombudsperson for the Office for Transitional Justice (2021–2023), directing investigations into systemic injustices and collaborating with international partners on institutional reform. Previously, he held the position of Vice President of the Tax Appeal Tribunal for five years, overseeing complex tax disputes and contributing significantly to national tax policy and administration.\n\nWith nearly a decade of experience as External Legal Counsel for the Bank of Maldives and three years with the Maldives Finance Leasing Company, Abdul Salaam has a deep understanding of banking laws, corporate governance, and risk mitigation. He holds a Master of Comparative Laws and a Bachelor of Laws (Hons) from the International Islamic University Malaysia, and is licensed to practice before the Supreme Court of the Maldives.',
+    education: [
+      'Master of Comparative Laws, International Islamic University Malaysia',
+      'Bachelor of Laws (Hons), International Islamic University Malaysia',
+      'Diploma in Information Technology',
+    ],
+    admissions: ['Supreme Court of the Maldives'],
+    languages: ['Dhivehi', 'English'],
+    years_experience: 15,
+    photo_url: 'https://hercules-cdn.com/file_oocqZQeJoPMU5bvd51Ic2pnk',
     is_partner: true,
     is_featured: true,
     is_visible: true,
     sort_order: 1,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '2',
     profile_id: null,
-    full_name: 'Fathimath Latheefa',
-    slug: 'fathimath-latheefa',
-    role_title: 'Senior Partner',
-    email: 'fathimath.latheefa@aureuslaw.mv',
-    phone: '+960 300 1002',
-    bio: 'Fathimath Latheefa heads the firm\'s litigation and dispute resolution practice. She has represented clients in landmark cases before the Supreme Court and has extensive experience in commercial disputes, arbitration, and family law matters. Fathimath is known for her strategic approach and courtroom presence.',
-    education: ['LLM, University of Melbourne', 'LLB, Villa College'],
-    admissions: ['Supreme Court of Maldives', 'High Court of Maldives'],
+    full_name: 'Hawwa Shahira',
+    slug: 'hawwa-shahira',
+    role_title: 'Co-Founder & Partner',
+    email: 'hawwashahira@aureuslaw.mv',
+    phone: null,
+    bio: 'Hawwa Shahira is a Co-Founder and Partner at Aureus Law Firm LLP, where she advises clients on commercial, employment, regulatory, family, criminal, and compliance-related matters. She is a Licensed Attorney-at-Law in the Republic of Maldives and passed the inaugural Maldives Bar Examination conducted in 2023.\n\nHer work at Aureus includes drafting and reviewing commercial contracts, service agreements, policies, and legal opinions, advising businesses on labour law compliance, disciplinary matters, and regulatory obligations, and liaising with government authorities on behalf of clients.\n\nBefore co-founding the firm, she served as Senior Legal Officer at Maldives Civil Aviation Authority, advising on regulatory compliance, enforcement action, risk mitigation, contracts, MOUs, and statutory obligations. She also served as an Investigator at the Ombudsperson\'s Office for Transitional Justice and as a Court Officer at the Family Court of Maldives. She holds a Bachelor\'s Degree in Shariah and Law with Honours from The Maldives National University.',
+    education: [
+      'Bachelor of Shariah and Law (Hons), Maldives National University',
+    ],
+    admissions: ['Bar Council of the Maldives (2023)'],
     languages: ['Dhivehi', 'English'],
-    years_experience: 15,
-    photo_url: null,
+    years_experience: null,
+    photo_url: 'https://hercules-cdn.com/file_a5SHXeBxIkQNwr8b7uCaDOik',
     is_partner: true,
     is_featured: true,
     is_visible: true,
     sort_order: 2,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '3',
     profile_id: null,
-    full_name: 'Hassan Waheed',
-    slug: 'hassan-waheed',
-    role_title: 'Partner',
-    email: 'hassan.waheed@aureuslaw.mv',
-    phone: '+960 300 1003',
-    bio: 'Hassan Waheed specializes in property law, banking and finance, and corporate transactions. He has advised on some of the largest resort development projects in the Maldives and regularly assists financial institutions with lending and security documentation.',
-    education: ['LLB (Hons), Brunel University London', 'Diploma in Islamic Banking'],
-    admissions: ['Supreme Court of Maldives', 'High Court of Maldives'],
+    full_name: 'Samaahath Abdul Latheef',
+    slug: 'samaahath-abdul-latheef',
+    role_title: 'Legal Consultant',
+    email: null,
+    phone: null,
+    bio: "Samaahath Abdul Latheef is a Legal Consultant at Aureus Law Firm, contributing a strong foundation in Shari'ah and Law together with practical experience in investigative work, court operations, and institutional legal processes. She earned her Master's Degree in Shari'ah and Law from Villa College and her Bachelor's Degree in Shari'ah and Law (Hons) from the Maldives National University.\n\nSamaahath previously served as an Investigator at the Ombudspersons Office for Transitional Justice, working on investigations involving statements, field inquiries, reporting, record management, institutional accountability, and referral processes. She also served as an Administrative Officer at the Family Court, gaining experience in case administration, hearing preparation, court records, and procedural coordination.\n\nShe has further worked with the National Centre for Information Technology, supporting e-government systems, user training, and administrative implementation. Across these roles, she has developed strengths in regulatory compliance, documentation, crisis management, collaboration, and stakeholder engagement.",
+    education: [
+      "Master's Degree in Shari'ah and Law, Villa College",
+      "Bachelor's Degree in Shari'ah and Law (Hons), Maldives National University",
+    ],
+    admissions: null,
     languages: ['Dhivehi', 'English'],
-    years_experience: 12,
-    photo_url: null,
-    is_partner: true,
+    years_experience: null,
+    photo_url: 'https://hercules-cdn.com/file_ad30uex21BfKeT1lu5UPu6Mn',
+    is_partner: false,
     is_featured: true,
     is_visible: true,
     sort_order: 3,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '4',
     profile_id: null,
-    full_name: 'Aishath Nahula',
-    slug: 'aishath-nahula',
-    role_title: 'Partner',
-    email: 'aishath.nahula@aureuslaw.mv',
-    phone: '+960 300 1004',
-    bio: 'Aishath Nahula leads the employment and regulatory practice at Aureus Law. She advises both employers and employees on workplace matters and has developed compliance frameworks for numerous organizations in the hospitality and financial services sectors.',
-    education: ['LLM, National University of Singapore', 'LLB, Maldives National University'],
-    admissions: ['High Court of Maldives', 'Civil Court of Maldives'],
-    languages: ['Dhivehi', 'English', 'Hindi'],
-    years_experience: 10,
-    photo_url: null,
-    is_partner: true,
-    is_featured: false,
+    full_name: 'Minha Abdul Muhsin',
+    slug: 'minha-abdul-muhsin',
+    role_title: 'Associate',
+    email: null,
+    phone: null,
+    bio: "Minha Abdul Muhsin is an Associate at Aureus Law Firm, contributing a strong foundation in legal analysis, legislative review, court procedure, and human rights-informed legal practice. She earned her Master of Laws in International Human Rights Law from the University of Essex and her Bachelor of Shari'ah & Law from the Maldives National University.\n\nBefore joining Aureus, Minha served as Deputy Legal Officer at the Legal Affairs Office of the President's Office, working on legal opinions, legislative bill review, Presidential legal briefs, decrees, MOUs, and court-related matters. She also served as Legal Officer at the Juvenile Court, supporting judicial processes through legal commentary, registrar functions, judicial assistance, training coordination, and legal research.\n\nMinha has further strengthened her practice through specialized training in juvenile justice, legislative drafting, domestic violence awareness, counter-terrorism coordination, and international legal processes. She is also a published contributor in the field of disaster management law in SAARC countries.",
+    education: [
+      'Master of Laws (International Human Rights Law), University of Essex',
+      "Bachelor of Shari'ah & Law, Maldives National University",
+    ],
+    admissions: null,
+    languages: ['Dhivehi', 'English'],
+    years_experience: null,
+    photo_url: 'https://hercules-cdn.com/file_J6zxiJ5Oq0ywCSzGqie5ZJd0',
+    is_partner: false,
+    is_featured: true,
     is_visible: true,
     sort_order: 4,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '5',
     profile_id: null,
-    full_name: 'Mohamed Shareef',
-    slug: 'mohamed-shareef',
-    role_title: 'Senior Associate',
-    email: 'mohamed.shareef@aureuslaw.mv',
-    phone: '+960 300 1005',
-    bio: 'Mohamed Shareef focuses on corporate and commercial law, assisting clients with business formations, contracts, and regulatory matters. He has particular expertise in the hospitality sector and regularly advises resort operators on operational legal matters.',
-    education: ['LLB (Hons), University of Wolverhampton', 'Certificate in International Arbitration'],
-    admissions: ['High Court of Maldives', 'Civil Court of Maldives'],
+    full_name: 'Mohamed Abdul Ghanee',
+    slug: 'mohamed-abdul-ghanee',
+    role_title: 'Associate',
+    email: null,
+    phone: null,
+    bio: "Mohamed Abdul Ghanee is an Associate at Aureus Law Firm, contributing a strong background in legislative drafting, regulatory analysis, administrative law processes, and institutional legal advisory work. He earned his Bachelor of Laws from the Faculty of Shariah and Law, Maldives National University.\n\nBefore joining Aureus in January 2026, Mohamed served for over a decade at the Ministry of Health, first as Legal Officer and later as Senior Legal Officer, while also acting for extended periods as Head of the Ministry's Legal Section. In these roles, he was involved in the drafting and review of bills, regulations, amendments, agreements, and MOUs, and provided legal opinions on a wide range of institutional matters.\n\nHe has held leadership roles including Chairperson of the Sexual Harassment Investigation Committee and Chairperson of the Muraajaa Committee under the Right to Information Act. He also served in the country's COVID-19 emergency response structures within both the National Emergency Operation Centre and the Health Emergency Operation Centre legal clusters.",
+    education: [
+      'Bachelor of Laws, Faculty of Shariah and Law, Maldives National University',
+    ],
+    admissions: null,
     languages: ['Dhivehi', 'English'],
-    years_experience: 7,
-    photo_url: null,
+    years_experience: 10,
+    photo_url: 'https://hercules-cdn.com/file_27XHwgoTrYulUJAVcKgCtHXm',
     is_partner: false,
-    is_featured: false,
+    is_featured: true,
     is_visible: true,
     sort_order: 5,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '6',
     profile_id: null,
-    full_name: 'Aminath Shifana',
-    slug: 'aminath-shifana',
-    role_title: 'Senior Associate',
-    email: 'aminath.shifana@aureuslaw.mv',
-    phone: '+960 300 1006',
-    bio: 'Aminath Shifana practices in the areas of civil litigation and family law. She is known for her compassionate approach to sensitive family matters and her thorough preparation in court proceedings. Aminath has successfully handled numerous custody and divorce cases.',
-    education: ['LLB, Maldives National University', 'Certificate in Mediation'],
-    admissions: ['High Court of Maldives', 'Civil Court of Maldives', 'Family Court'],
+    full_name: 'Ahmed Raaiz',
+    slug: 'ahmed-raaiz',
+    role_title: 'Legal Consultant',
+    email: null,
+    phone: null,
+    bio: "Ahmed Raaiz is a Legal Consultant at Aureus Law Firm with a strong academic background in Shari'ah and Law and extensive professional experience in legal practice, investigations, and institutional legal affairs. He holds a Bachelor's Degree in Shari'ah and Law (Hons) from The Maldives National University.\n\nRaaiz has served in several public institutions, gaining experience in investigations, case management, and legal analysis across criminal, civil, family law, and child rights matters. He served as an Investigation Officer at the Maldives Police Service, handling criminal investigations, evidence analysis, witness interviews, and prosecution support.\n\nHe also served at the Ombudsperson's Office for Transitional Justice investigating human rights complaints, at the Children's Ombudsperson's Office handling child rights matters, and as Legal Officer at the Local Government Authority providing legal analysis on local governance and decentralization matters.",
+    education: [
+      "Bachelor's Degree in Shari'ah and Law (Hons), Maldives National University",
+    ],
+    admissions: null,
     languages: ['Dhivehi', 'English'],
-    years_experience: 6,
-    photo_url: null,
+    years_experience: null,
+    photo_url: 'https://hercules-cdn.com/file_V8L9XCC0an7D6wBT6XkppSwG',
     is_partner: false,
     is_featured: false,
     is_visible: true,
     sort_order: 6,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '7',
     profile_id: null,
-    full_name: 'Ibrahim Nazim',
-    slug: 'ibrahim-nazim',
-    role_title: 'Associate',
-    email: 'ibrahim.nazim@aureuslaw.mv',
-    phone: '+960 300 1007',
-    bio: 'Ibrahim Nazim works across the firm\'s practice areas with a focus on property law and contract drafting. He assists clients with property transactions, lease agreements, and commercial contracts, bringing meticulous attention to detail to every matter.',
-    education: ['LLB, Villa College'],
-    admissions: ['Civil Court of Maldives', 'Magistrate Courts'],
+    full_name: 'Ibrahim Rasheed',
+    slug: 'ibrahim-rasheed',
+    role_title: 'Tax Consultant',
+    email: null,
+    phone: null,
+    bio: 'Ibrahim Rasheed is a Tax Consultant at Aureus Law Firm, contributing a rare blend of legal qualification, tax advisory experience, accounting expertise, and commercial insight. He holds a Master in Comparative Law (MCL) from the Islamic University of Maldives, a Master in Islamic Finance Practice from INCEIF, and a Bachelor of Sharia & Law – LLB (Hons) from the Islamic University of Maldives. He is also a Licensed Attorney of the Bar Council of the Maldives and has pursued additional professional studies through CIMA and ACCA.\n\nOver the course of his career, Ibrahim has held roles across legal, tax, accounting, and financial management functions, including service at the Tax Appeal Tribunal, Maldives Tourism Development Corporation Plc, Wataniya Telecom Maldives Pvt Ltd, and Universal Enterprises Pvt Ltd, as well as in private advisory practice.\n\nHis experience includes advising on the legality of tax matters, financial and reporting consequences, budgeting, asset oversight, internal audit, and reporting systems improvement. At Aureus Law Firm, he brings a disciplined and commercially practical perspective to tax consultancy.',
+    education: [
+      'Master in Comparative Law (MCL), Islamic University of Maldives',
+      'Master in Islamic Finance Practice, INCEIF',
+      'Bachelor of Sharia & Law – LLB (Hons), Islamic University of Maldives',
+    ],
+    admissions: ['Bar Council of the Maldives'],
     languages: ['Dhivehi', 'English'],
-    years_experience: 4,
-    photo_url: null,
+    years_experience: null,
+    photo_url: 'https://hercules-cdn.com/file_iJZw69vBG2s6p4zlDADEm82R',
     is_partner: false,
     is_featured: false,
     is_visible: true,
     sort_order: 7,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
   },
   {
     id: '8',
     profile_id: null,
-    full_name: 'Mariyam Shifa',
-    slug: 'mariyam-shifa',
-    role_title: 'Associate',
-    email: 'mariyam.shifa@aureuslaw.mv',
-    phone: '+960 300 1008',
-    bio: 'Mariyam Shifa specializes in immigration law and administrative matters. She assists both individuals and businesses with visa applications, work permits, and dealings with government authorities. Her practical approach helps clients navigate bureaucratic processes efficiently.',
-    education: ['LLB (Hons), University of London International', 'Diploma in Administrative Law'],
-    admissions: ['Civil Court of Maldives'],
-    languages: ['Dhivehi', 'English', 'Sinhala'],
-    years_experience: 3,
+    full_name: 'Fathimath Fazuna',
+    slug: 'fathimath-fazuna',
+    role_title: 'Social Inclusion Consultant',
+    email: null,
+    phone: null,
+    bio: 'Fathimath Fazuna is the Social Inclusion Consultant at Aureus Law Firm, where she contributes a strong background in human rights, mediation, social development, counselling, and inclusive community engagement. Her role focuses on advancing equality, diversity, and inclusion through internal policy support, culture-building, client service considerations, and community-facing initiatives.\n\nFazuna holds a Bachelor\'s Degree in Sociology and Anthropology from the International Islamic University of Malaysia, a Master\'s Degree in Development Studies from the University of Malaya, and a Diploma in Counselling Psychology from the American College of Higher Education, Sri Lanka.\n\nHer career spans over two decades including service as Senior Social Service Worker at the National Drug Agency, Human Rights Officer at the Human Rights Commission of the Maldives, Mediator at the Ombudspersons Office for Transitional Justice, and Gender, Nutrition and Social Inclusion Coordinator at the Maldives Agribusiness Program.',
+    education: [
+      "Bachelor's Degree in Sociology and Anthropology, International Islamic University of Malaysia",
+      "Master's Degree in Development Studies, University of Malaya",
+      'Diploma in Counselling Psychology, American College of Higher Education, Sri Lanka',
+    ],
+    admissions: null,
+    languages: ['Dhivehi', 'English'],
+    years_experience: 20,
     photo_url: null,
     is_partner: false,
     is_featured: false,
     is_visible: true,
     sort_order: 8,
     linkedin_url: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
-  }
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
+  },
+  {
+    id: '9',
+    profile_id: null,
+    full_name: 'Aminath Mohamed',
+    slug: 'aminath-mohamed',
+    role_title: 'Business Management & Marketing Consultant',
+    email: null,
+    phone: null,
+    bio: "Aminath Mohamed is the Business Management and Marketing Consultant at Aureus Law Firm, contributing experience in business operations, institutional leadership, stakeholder engagement, strategic coordination, and marketing-related organizational support. Her academic background includes a Master's in Business from the Maldives Business School, a Bachelor's in Business / Management and Marketing, and a Diploma in Business from the Maldives National University.\n\nHer professional experience spans leadership and administrative roles at the National Centre for the Arts, the Ministry of Youth Empowerment, Information and Arts, the Ombudspersons Office for Transitional Justice, the Department of Judicial Administration – Judicial Academy, STRADA Maldives, and State Trading Organisation Plc.\n\nAcross these roles, she has developed practical strengths in management support, finance and procurement administration, case and workflow coordination, reporting, communication, and institutional organization.",
+    education: [
+      "Master's in Business, Maldives Business School",
+      "Bachelor's in Business / Management and Marketing, Maldives National University",
+      'Diploma in Business, Maldives National University',
+    ],
+    admissions: null,
+    languages: ['Dhivehi', 'English'],
+    years_experience: null,
+    photo_url: null,
+    is_partner: false,
+    is_featured: false,
+    is_visible: true,
+    sort_order: 9,
+    linkedin_url: null,
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
+  },
+  {
+    id: '10',
+    profile_id: null,
+    full_name: 'Moosa Riffath',
+    slug: 'moosa-riffath',
+    role_title: 'IT Professional',
+    email: null,
+    phone: null,
+    bio: 'Moosa Riffath is an IT professional supporting Aureus Law Firm, assisting with technology-related operations, system support, network maintenance, and general IT support. He brings practical IT experience from legal, education, public sector, and corporate environments.\n\nHis academic background includes a Bachelor of Information Technology in System Administration from Cyryx College and a Diploma in Information Technology from the same institution. He is currently pursuing an MSc in Information Technology at Villa College, Maldives, affiliated with the University of the West of England.\n\nMoosa\'s experience includes his current role as ICT Manager at Road Development Corporation, as well as previous technical roles at the Ombudsperson\'s Office for Transitional Justice, Criminal Court, and Majeediyya School. Across these roles, he has developed strengths in IT troubleshooting, network operations, server support, Microsoft administration, hardware and software support, and user-focused technical assistance.',
+    education: [
+      'Bachelor of Information Technology (System Administration), Cyryx College',
+      'Diploma in Information Technology, Cyryx College',
+      'MSc in Information Technology (in progress), Villa College / University of the West of England',
+    ],
+    admissions: null,
+    languages: ['Dhivehi', 'English'],
+    years_experience: null,
+    photo_url: null,
+    is_partner: false,
+    is_featured: false,
+    is_visible: true,
+    sort_order: 10,
+    linkedin_url: null,
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
+  },
+  {
+    id: '11',
+    profile_id: null,
+    full_name: 'Ismail Iyaadh Shaheed',
+    slug: 'ismail-iyaadh-shaheed',
+    role_title: 'Junior Legal Associate',
+    email: null,
+    phone: null,
+    bio: "Ismail Iyaadh Shaheed is a Junior Legal Associate at Aureus Law Firm LLP with more than seven years of professional experience across government, legal, and institutional settings, with work involving legal support, public administration, governance, regulatory review, legislative processes, and institutional coordination.\n\nAt Aureus, Iyaadh assists with legal research, case preparation, document review, contract and agreement review, client correspondence, and matters before courts and tribunals. Before joining the firm, he worked in several areas of the Maldivian public sector, supporting legal affairs, parliamentary and legislative processes, national security work, public administration, and policy-related matters.\n\nHis experience includes supporting legislative and regulatory procedures, ratification processes, administrative decisions, right to information procedures, and legal research. His areas of interest include public law, employment law, commercial and contractual matters, governance, regulatory compliance, human rights, and national security. He holds a Bachelor of Shari'ah and Law (Honours) from Maldives National University.",
+    education: [
+      "Bachelor of Shari'ah and Law (Honours), Maldives National University",
+    ],
+    admissions: null,
+    languages: ['Dhivehi', 'English'],
+    years_experience: 7,
+    photo_url: null,
+    is_partner: false,
+    is_featured: false,
+    is_visible: true,
+    sort_order: 11,
+    linkedin_url: null,
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
+  },
 ]
 
 export const articleCategories: ArticleCategory[] = [
-  { id: '1', name: 'Legal Updates', slug: 'legal-updates', description: 'Recent changes in Maldivian law and regulations', sort_order: 1, created_at: '2024-01-01' },
-  { id: '2', name: 'Business Insights', slug: 'business-insights', description: 'Practical guidance for businesses operating in the Maldives', sort_order: 2, created_at: '2024-01-01' },
-  { id: '3', name: 'Industry Focus', slug: 'industry-focus', description: 'Deep dives into sector-specific legal matters', sort_order: 3, created_at: '2024-01-01' },
-  { id: '4', name: 'Client Guides', slug: 'client-guides', description: 'Helpful resources for common legal questions', sort_order: 4, created_at: '2024-01-01' },
-  { id: '5', name: 'Firm News', slug: 'firm-news', description: 'Updates and announcements from Aureus Law', sort_order: 5, created_at: '2024-01-01' }
+  { id: '1', name: 'Legal Updates', slug: 'legal-updates', description: 'Recent changes in Maldivian law and regulations', sort_order: 1, created_at: '2025-12-08' },
+  { id: '2', name: 'Business Insights', slug: 'business-insights', description: 'Practical guidance for businesses operating in the Maldives', sort_order: 2, created_at: '2025-12-08' },
+  { id: '3', name: 'Industry Focus', slug: 'industry-focus', description: 'Deep dives into sector-specific legal matters', sort_order: 3, created_at: '2025-12-08' },
+  { id: '4', name: 'Client Guides', slug: 'client-guides', description: 'Helpful resources for common legal questions', sort_order: 4, created_at: '2025-12-08' },
+  { id: '5', name: 'Firm News', slug: 'firm-news', description: 'Updates and announcements from Aureus Law', sort_order: 5, created_at: '2025-12-08' }
 ]
 
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Understanding Employment Law Changes in 2024',
-    slug: 'employment-law-changes-2024',
-    excerpt: 'Recent amendments to the Employment Act bring significant changes for employers and employees. Here is what you need to know.',
-    content: '<p>The Maldivian Employment Act has undergone several important amendments that affect both employers and employees operating in the country. These changes aim to modernize workplace regulations and provide greater protections for workers while maintaining flexibility for businesses.</p><h2>Key Changes for Employers</h2><p>Employers must now provide written employment contracts within 14 days of employment commencement. The contracts must include specific terms regarding leave entitlements, notice periods, and disciplinary procedures.</p><h2>Enhanced Leave Provisions</h2><p>Annual leave entitlements have been clarified, with employees now entitled to a minimum of 30 days paid leave after one year of service. Sick leave provisions have also been strengthened.</p><h2>What This Means for Your Business</h2><p>We recommend all employers review their current employment contracts and HR policies to ensure compliance with the new requirements. Our employment team is available to assist with policy reviews and contract updates.</p>',
+    title: 'Understanding Employment Law in the Maldives',
+    slug: 'understanding-employment-law-maldives',
+    excerpt: 'A practical guide to employment rights, obligations, and compliance for businesses and workers in the Maldives.',
+    content: '<p>Maldivian employment law governs the rights and obligations of employers and employees operating in the country. Understanding these rules is essential for businesses to remain compliant and for workers to know their rights.</p><h2>Key Employer Obligations</h2><p>Employers must provide written employment contracts, ensure safe working conditions, pay wages on time, and comply with leave entitlements as prescribed under Maldivian labor regulations.</p><h2>Employee Rights</h2><p>Employees are entitled to annual leave, sick leave, and other protections. Unfair dismissal is prohibited and may lead to claims before the Employment Tribunal.</p><h2>How We Can Help</h2><p>Our employment practice provides advice on contracts, disciplinary procedures, regulatory compliance, and representation in disputes. Contact Aureus Law Firm LLP for tailored employment law support.</p>',
     cover_image_url: null,
     category_id: '1',
-    author_id: '4',
+    author_id: '2',
     status: 'published',
     is_featured: true,
     read_time_minutes: 5,
@@ -507,40 +607,40 @@ export const articles: Article[] = [
     attachment_url: null,
     meta_title: null,
     meta_description: null,
-    published_at: '2024-03-01',
-    created_at: '2024-03-01',
-    updated_at: '2024-03-01',
+    published_at: '2025-12-08',
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
     category: articleCategories[0],
-    author: teamMembers[3]
+    author: teamMembers[1]
   },
   {
     id: '2',
-    title: 'Guide to Property Purchases in the Maldives',
-    slug: 'property-purchases-guide-maldives',
-    excerpt: 'A comprehensive guide to buying property in the Maldives, including foreign ownership rules and due diligence requirements.',
-    content: '<p>Property ownership in the Maldives involves unique considerations that both local and foreign buyers must understand. This guide covers the essential legal aspects of property transactions in our jurisdiction.</p><h2>Foreign Ownership Rules</h2><p>Foreign nationals and companies can own property in the Maldives under specific conditions, primarily through long-term lease arrangements rather than freehold ownership. Understanding these distinctions is crucial for international investors.</p><h2>Due Diligence Requirements</h2><p>Before completing any property transaction, thorough due diligence is essential. This includes title searches, verification of ownership rights, review of any encumbrances, and confirmation of necessary permits.</p><h2>The Transaction Process</h2><p>Property transactions typically involve negotiation, preliminary agreements, due diligence, final documentation, and registration. Each stage requires careful attention to legal requirements.</p><p>Contact our property team for personalized guidance on your property transaction.</p>',
+    title: 'Guide to Property Transactions in the Maldives',
+    slug: 'property-transactions-guide-maldives',
+    excerpt: 'A practical guide to property purchases, leases, and land matters in the Maldives, including due diligence requirements.',
+    content: '<p>Property matters in the Maldives involve unique legal considerations. Whether you are a local buyer, a business, or a foreign investor, understanding the legal framework is essential before entering any property transaction.</p><h2>Key Considerations</h2><p>Foreign nationals and companies can access property in the Maldives primarily through long-term lease arrangements. Due diligence is critical before completing any transaction.</p><h2>Due Diligence</h2><p>Before proceeding, it is important to verify ownership, review encumbrances, and confirm all necessary permits. Our team can guide you through the entire process.</p><p>Contact Aureus Law Firm LLP for property advisory and transactional support.</p>',
     cover_image_url: null,
     category_id: '4',
-    author_id: '3',
+    author_id: '1',
     status: 'published',
     is_featured: true,
     read_time_minutes: 7,
-    tags: ['property law', 'real estate', 'foreign investment'],
+    tags: ['property law', 'real estate', 'due diligence'],
     attachment_url: null,
     meta_title: null,
     meta_description: null,
-    published_at: '2024-02-15',
-    created_at: '2024-02-15',
-    updated_at: '2024-02-15',
+    published_at: '2025-12-08',
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
     category: articleCategories[3],
-    author: teamMembers[2]
+    author: teamMembers[0]
   },
   {
     id: '3',
-    title: 'Corporate Governance Best Practices for Maldivian Companies',
-    slug: 'corporate-governance-best-practices',
-    excerpt: 'Strong corporate governance builds investor confidence and regulatory compliance. Learn the essentials for Maldivian businesses.',
-    content: '<p>Good corporate governance is the foundation of sustainable business success. For companies operating in the Maldives, implementing robust governance practices is not just about compliance—it is about building trust with investors, partners, and regulators.</p><h2>Board Structure and Composition</h2><p>An effective board should include a mix of executive and non-executive directors with diverse skills and experience. Clear delineation of roles between the board and management is essential.</p><h2>Shareholder Rights</h2><p>Protecting shareholder rights through proper meeting procedures, voting mechanisms, and information disclosure builds confidence among investors and facilitates capital raising.</p><h2>Compliance and Risk Management</h2><p>Establishing clear compliance frameworks and risk management processes helps companies identify and address potential issues before they become problems.</p><p>Our corporate team can assist with governance reviews and implementation of best practices.</p>',
+    title: 'Corporate Compliance for Maldivian Businesses',
+    slug: 'corporate-compliance-maldivian-businesses',
+    excerpt: 'What businesses operating in the Maldives need to know about regulatory compliance, governance, and risk management.',
+    content: '<p>Good corporate compliance is the foundation of sustainable business in the Maldives. Implementing robust governance practices builds trust with investors, partners, and regulators.</p><h2>Key Compliance Areas</h2><p>Businesses must comply with company law, employment regulations, tax obligations, and sector-specific rules. Clear internal policies and sound governance reduce risk significantly.</p><h2>Risk Management</h2><p>Establishing clear compliance frameworks helps companies identify and address issues before they escalate. Our team assists with compliance reviews and implementation of best practices.</p>',
     cover_image_url: null,
     category_id: '2',
     author_id: '1',
@@ -551,33 +651,33 @@ export const articles: Article[] = [
     attachment_url: null,
     meta_title: null,
     meta_description: null,
-    published_at: '2024-02-01',
-    created_at: '2024-02-01',
-    updated_at: '2024-02-01',
+    published_at: '2025-12-08',
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
     category: articleCategories[1],
     author: teamMembers[0]
   },
   {
     id: '4',
-    title: 'Navigating Resort Development Agreements in the Maldives',
-    slug: 'resort-development-agreements',
-    excerpt: 'Key considerations for investors and developers entering the Maldivian hospitality sector.',
-    content: '<p>The Maldives tourism industry continues to attract significant investment. Understanding the legal framework for resort development is essential for successful projects.</p><h2>Lease Arrangements</h2><p>Resort islands are typically leased from the government for periods of up to 50 years. The terms and conditions of these leases significantly impact project viability.</p><h2>Development Requirements</h2><p>Strict environmental and development requirements apply to resort projects. Early engagement with regulatory requirements helps avoid costly delays.</p>',
+    title: 'Tax Advisory in the Maldives: What You Need to Know',
+    slug: 'tax-advisory-maldives',
+    excerpt: 'An overview of tax obligations, dispute resolution, and compliance for businesses and individuals in the Maldives.',
+    content: '<p>Tax law in the Maldives has evolved significantly in recent years. Whether you are a business, a financial institution, or an individual, understanding your tax obligations is essential.</p><h2>Key Tax Obligations</h2><p>Businesses must comply with GST, Business Profit Tax (BPT), and other applicable taxes. Accurate filing and timely payment are critical to avoiding penalties.</p><h2>Tax Disputes</h2><p>When disputes arise with the tax authority, the Tax Appeal Tribunal provides a forum for resolution. Our team has deep experience in tax litigation and advisory at the highest levels.</p>',
     cover_image_url: null,
     category_id: '3',
-    author_id: '3',
+    author_id: '7',
     status: 'published',
     is_featured: false,
     read_time_minutes: 8,
-    tags: ['hospitality', 'development', 'investment'],
+    tags: ['tax law', 'compliance', 'advisory'],
     attachment_url: null,
     meta_title: null,
     meta_description: null,
-    published_at: '2024-01-20',
-    created_at: '2024-01-20',
-    updated_at: '2024-01-20',
+    published_at: '2025-12-08',
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08',
     category: articleCategories[2],
-    author: teamMembers[2]
+    author: teamMembers[6]
   }
 ]
 
@@ -587,13 +687,13 @@ export const testimonials: Testimonial[] = [
     client_name: 'Ibrahim Moosa',
     client_title: 'CEO',
     company_name: 'Island Resorts Group',
-    content: 'Aureus Law has been our trusted legal partner for over five years. Their understanding of the hospitality industry and proactive approach to legal matters has been invaluable to our expansion across the Maldives.',
+    content: 'Aureus Law has been our trusted legal partner. Their understanding of the Maldivian legal landscape and proactive approach to legal matters has been invaluable to our business.',
     rating: 5,
     practice_area_id: '1',
     is_featured: true,
     is_visible: true,
     sort_order: 1,
-    created_at: '2024-01-01'
+    created_at: '2025-12-08'
   },
   {
     id: '2',
@@ -606,20 +706,20 @@ export const testimonials: Testimonial[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 2,
-    created_at: '2024-01-01'
+    created_at: '2025-12-08'
   },
   {
     id: '3',
     client_name: 'Ahmed Saleem',
     client_title: 'Managing Director',
     company_name: 'Coral Construction',
-    content: 'The property and construction team at Aureus Law helped us navigate complex development agreements and resolve a challenging dispute. Professional, thorough, and always available when needed.',
+    content: 'The team at Aureus Law helped us navigate complex agreements and resolve a challenging dispute. Professional, thorough, and always available when needed.',
     rating: 5,
     practice_area_id: '6',
     is_featured: true,
     is_visible: true,
     sort_order: 3,
-    created_at: '2024-01-01'
+    created_at: '2025-12-08'
   }
 ]
 
@@ -632,8 +732,8 @@ export const faqs: FAQ[] = [
     practice_area_id: null,
     sort_order: 1,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -643,30 +743,30 @@ export const faqs: FAQ[] = [
     practice_area_id: null,
     sort_order: 2,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
     question: 'Do you offer services in languages other than English and Dhivehi?',
-    answer: 'Yes, several of our lawyers are fluent in additional languages including Arabic, Hindi, and Sinhala. Please let us know your language preference when scheduling your consultation.',
+    answer: 'Yes, our team members are fluent in both Dhivehi and English. Please let us know your language preference when scheduling your consultation.',
     category: 'General',
     practice_area_id: null,
     sort_order: 3,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '4',
     question: 'How do I incorporate a company in the Maldives?',
-    answer: 'Company incorporation involves registering with the Ministry of Economic Development, obtaining necessary licenses, and preparing constitutional documents. Our corporate team can guide you through the entire process, from choosing the right business structure to completing registration.',
+    answer: 'Company incorporation involves registering with the Ministry of Economic Development, obtaining necessary licenses, and preparing constitutional documents. Our team can guide you through the entire process, from choosing the right business structure to completing registration.',
     category: 'Business',
     practice_area_id: '1',
     sort_order: 4,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '5',
@@ -676,8 +776,8 @@ export const faqs: FAQ[] = [
     practice_area_id: '2',
     sort_order: 5,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '6',
@@ -687,8 +787,8 @@ export const faqs: FAQ[] = [
     practice_area_id: '2',
     sort_order: 6,
     is_visible: true,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   }
 ]
 
@@ -703,11 +803,11 @@ export const demoClients: Client[] = [
     address: 'Tower 1, Hulhumalé Business Park',
     company_name: 'Island Resorts Group Pvt Ltd',
     contact_person: 'Ibrahim Moosa',
-    notes: 'Major hospitality client. VIP treatment.',
+    notes: 'Major hospitality client.',
     is_active: true,
     created_by: null,
-    created_at: '2024-01-01',
-    updated_at: '2024-01-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -721,8 +821,8 @@ export const demoClients: Client[] = [
     notes: 'Family law matter - divorce proceedings.',
     is_active: true,
     created_by: null,
-    created_at: '2024-01-15',
-    updated_at: '2024-01-15'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
@@ -736,15 +836,15 @@ export const demoClients: Client[] = [
     notes: 'Construction and development client.',
     is_active: true,
     created_by: null,
-    created_at: '2024-02-01',
-    updated_at: '2024-02-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   }
 ]
 
 export const demoCases: Case[] = [
   {
     id: '1',
-    case_number: 'AL-2024-00001',
+    case_number: 'AL-2025-00001',
     title: 'Island Resorts Group - Employment Dispute',
     description: 'Wrongful termination claim by former employee. Client is defendant.',
     client_id: '1',
@@ -752,17 +852,17 @@ export const demoCases: Case[] = [
     status: 'active',
     priority: 'high',
     court_name: 'Employment Tribunal',
-    court_case_number: 'ET-2024-0123',
-    next_hearing_date: '2024-04-15T10:00:00Z',
-    deadline: '2024-04-10T17:00:00Z',
+    court_case_number: 'ET-2025-0123',
+    next_hearing_date: '2025-03-15T10:00:00Z',
+    deadline: '2025-03-10T17:00:00Z',
     notes: 'Key witness interview scheduled for next week.',
     created_by: null,
-    created_at: '2024-02-01',
-    updated_at: '2024-03-01'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
-    case_number: 'AL-2024-00002',
+    case_number: 'AL-2025-00002',
     title: 'Rashid Divorce Proceedings',
     description: 'Contested divorce with child custody dispute.',
     client_id: '2',
@@ -770,17 +870,17 @@ export const demoCases: Case[] = [
     status: 'active',
     priority: 'medium',
     court_name: 'Family Court',
-    court_case_number: 'FC-2024-0456',
-    next_hearing_date: '2024-04-20T09:00:00Z',
+    court_case_number: 'FC-2025-0456',
+    next_hearing_date: '2025-03-20T09:00:00Z',
     deadline: null,
     notes: 'Mediation attempt scheduled before hearing.',
     created_by: null,
-    created_at: '2024-01-20',
-    updated_at: '2024-03-05'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
-    case_number: 'AL-2024-00003',
+    case_number: 'AL-2025-00003',
     title: 'Coral Construction - Contract Review',
     description: 'Review and negotiation of major development contract for new resort project.',
     client_id: '3',
@@ -790,30 +890,12 @@ export const demoCases: Case[] = [
     court_name: null,
     court_case_number: null,
     next_hearing_date: null,
-    deadline: '2024-03-30T17:00:00Z',
+    deadline: '2025-02-28T17:00:00Z',
     notes: 'Client meeting next week to discuss revised terms.',
     created_by: null,
-    created_at: '2024-03-01',
-    updated_at: '2024-03-10'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
-  {
-    id: '4',
-    case_number: 'AL-2024-00004',
-    title: 'Property Dispute - Land Registration',
-    description: 'Title dispute over commercial property in Hulhumalé.',
-    client_id: '1',
-    practice_area_id: '6',
-    status: 'pending',
-    priority: 'medium',
-    court_name: 'Civil Court',
-    court_case_number: null,
-    next_hearing_date: null,
-    deadline: null,
-    notes: 'Awaiting response from opposing party.',
-    created_by: null,
-    created_at: '2024-02-15',
-    updated_at: '2024-02-28'
-  }
 ]
 
 export const demoTasks: Task[] = [
@@ -826,10 +908,10 @@ export const demoTasks: Task[] = [
     assigned_by: null,
     priority: 'high',
     status: 'in_progress',
-    due_date: '2024-04-08T17:00:00Z',
+    due_date: '2025-03-08T17:00:00Z',
     completed_at: null,
-    created_at: '2024-03-01',
-    updated_at: '2024-03-10'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -840,10 +922,10 @@ export const demoTasks: Task[] = [
     assigned_by: null,
     priority: 'high',
     status: 'pending',
-    due_date: '2024-03-25T17:00:00Z',
+    due_date: '2025-02-25T17:00:00Z',
     completed_at: null,
-    created_at: '2024-03-10',
-    updated_at: '2024-03-10'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '3',
@@ -854,25 +936,11 @@ export const demoTasks: Task[] = [
     assigned_by: null,
     priority: 'medium',
     status: 'completed',
-    due_date: '2024-03-15T17:00:00Z',
-    completed_at: '2024-03-14T14:30:00Z',
-    created_at: '2024-03-01',
-    updated_at: '2024-03-14'
+    due_date: '2025-01-15T17:00:00Z',
+    completed_at: '2025-01-14T14:30:00Z',
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
-  {
-    id: '4',
-    title: 'Client meeting preparation',
-    description: 'Prepare agenda and documents for Coral Construction meeting.',
-    case_id: '3',
-    assigned_to: null,
-    assigned_by: null,
-    priority: 'medium',
-    status: 'pending',
-    due_date: '2024-03-22T12:00:00Z',
-    completed_at: null,
-    created_at: '2024-03-15',
-    updated_at: '2024-03-15'
-  }
 ]
 
 export const demoAppointments: Appointment[] = [
@@ -884,14 +952,14 @@ export const demoAppointments: Appointment[] = [
     case_id: '1',
     consultation_request_id: null,
     assigned_to: null,
-    location: 'Aureus Law Office',
-    start_time: '2024-03-20T10:00:00Z',
-    end_time: '2024-03-20T11:30:00Z',
+    location: 'Aureus Law Firm Office',
+    start_time: '2025-02-20T10:00:00Z',
+    end_time: '2025-02-20T11:30:00Z',
     status: 'confirmed',
     notes: 'Ibrahim Moosa and HR Director attending.',
     created_by: null,
-    created_at: '2024-03-10',
-    updated_at: '2024-03-10'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
   {
     id: '2',
@@ -902,31 +970,14 @@ export const demoAppointments: Appointment[] = [
     consultation_request_id: null,
     assigned_to: null,
     location: 'Client Office',
-    start_time: '2024-03-25T14:00:00Z',
-    end_time: '2024-03-25T16:00:00Z',
+    start_time: '2025-02-25T14:00:00Z',
+    end_time: '2025-02-25T16:00:00Z',
     status: 'pending',
     notes: 'Bring printed copies of contract comparison.',
     created_by: null,
-    created_at: '2024-03-15',
-    updated_at: '2024-03-15'
+    created_at: '2025-12-08',
+    updated_at: '2025-12-08'
   },
-  {
-    id: '3',
-    title: 'New Consultation - Business Formation',
-    description: 'Initial consultation for new business client.',
-    client_id: null,
-    case_id: null,
-    consultation_request_id: null,
-    assigned_to: null,
-    location: 'Virtual Meeting',
-    start_time: '2024-03-21T09:00:00Z',
-    end_time: '2024-03-21T10:00:00Z',
-    status: 'confirmed',
-    notes: 'Prospective client from Dubai interested in resort investment.',
-    created_by: null,
-    created_at: '2024-03-18',
-    updated_at: '2024-03-18'
-  }
 ]
 
 export const demoNotifications: Notification[] = [
@@ -938,7 +989,7 @@ export const demoNotifications: Notification[] = [
     type: 'task',
     link: '/portal/tasks',
     is_read: false,
-    created_at: '2024-03-15T09:00:00Z'
+    created_at: '2025-12-15T09:00:00Z'
   },
   {
     id: '2',
@@ -948,7 +999,7 @@ export const demoNotifications: Notification[] = [
     type: 'reminder',
     link: '/portal/cases/1',
     is_read: false,
-    created_at: '2024-03-12T08:00:00Z'
+    created_at: '2025-12-12T08:00:00Z'
   },
   {
     id: '3',
@@ -958,7 +1009,7 @@ export const demoNotifications: Notification[] = [
     type: 'document',
     link: '/portal/cases/2',
     is_read: true,
-    created_at: '2024-03-10T14:30:00Z'
+    created_at: '2025-12-10T14:30:00Z'
   }
 ]
 
@@ -971,14 +1022,14 @@ export const demoConsultationRequests: ConsultationRequest[] = [
     client_type: 'individual',
     company_name: null,
     practice_area_id: '4',
-    preferred_date: '2024-03-25',
+    preferred_date: '2025-03-25',
     preferred_time: 'morning',
     message: 'I need advice regarding a family matter involving child custody.',
     status: 'new',
     internal_notes: null,
     assigned_to: null,
-    created_at: '2024-03-18T10:00:00Z',
-    updated_at: '2024-03-18T10:00:00Z'
+    created_at: '2025-12-18T10:00:00Z',
+    updated_at: '2025-12-18T10:00:00Z'
   },
   {
     id: '2',
@@ -988,14 +1039,14 @@ export const demoConsultationRequests: ConsultationRequest[] = [
     client_type: 'business',
     company_name: 'Ocean Ventures Pvt Ltd',
     practice_area_id: '1',
-    preferred_date: '2024-03-27',
+    preferred_date: '2025-03-27',
     preferred_time: 'afternoon',
     message: 'Looking for legal support for a new joint venture agreement.',
     status: 'reviewed',
-    internal_notes: 'Potential high-value client. Hassan to follow up.',
+    internal_notes: 'Potential high-value client. To follow up.',
     assigned_to: null,
-    created_at: '2024-03-16T14:00:00Z',
-    updated_at: '2024-03-17T09:00:00Z'
+    created_at: '2025-12-16T14:00:00Z',
+    updated_at: '2025-12-17T09:00:00Z'
   }
 ]
 
@@ -1003,40 +1054,39 @@ export const demoConsultationRequests: ConsultationRequest[] = [
 export const jobOpenings = [
   {
     id: '1',
-    title: 'Associate Attorney - Corporate Law',
+    title: 'Associate Attorney – Litigation',
     type: 'Full-time',
-    location: 'Male, Maldives',
-    description: 'We are seeking a motivated Associate Attorney to join our Corporate & Commercial Law practice. The ideal candidate will assist senior partners in handling complex corporate transactions, M&A deals, and joint venture agreements.',
+    location: 'Malé, Maldives',
+    description: 'We are seeking a motivated Associate Attorney to join our Litigation & Dispute Resolution practice. The ideal candidate will assist in court proceedings, legal research, case preparation, and client advisory.',
     requirements: [
-      'LLB from a recognized university',
-      '2-4 years of experience in corporate law',
-      'Strong drafting and negotiation skills',
+      'Bachelor of Laws or Bachelor of Shariah & Law from a recognized university',
+      '1-3 years of relevant experience',
+      'Strong research and drafting skills',
       'Fluency in English and Dhivehi',
-      'Excellent attention to detail'
+      'Admission or eligibility for admission to the Bar Council of Maldives'
     ],
-    posted_date: '2024-03-01',
+    posted_date: '2025-12-08',
   },
   {
     id: '2',
-    title: 'Legal Associate - Litigation',
+    title: 'Legal Associate – Corporate & Regulatory',
     type: 'Full-time',
-    location: 'Male, Maldives',
-    description: 'Join our Litigation team to represent clients in civil and commercial disputes before Maldivian courts. You will work on case preparation, legal research, and court appearances.',
+    location: 'Malé, Maldives',
+    description: 'Join our Corporate, Regulatory & Advisory team to support clients with business formation, contracts, compliance, and regulatory matters.',
     requirements: [
-      'LLB from a recognized university',
-      '1-3 years of litigation experience',
-      'Strong advocacy and research skills',
-      'Admission to practice in Maldives',
-      'Ability to work under pressure'
+      'Bachelor of Laws or Bachelor of Shariah & Law from a recognized university',
+      'Strong drafting and advisory skills',
+      'Fluency in English and Dhivehi',
+      'Attention to detail and client focus'
     ],
-    posted_date: '2024-03-10',
+    posted_date: '2025-12-08',
   },
   {
     id: '3',
-    title: 'Paralegal',
+    title: 'Paralegal / Legal Support Officer',
     type: 'Full-time',
-    location: 'Male, Maldives',
-    description: 'Support our legal team with document preparation, research, and administrative tasks. An excellent opportunity for those looking to build a career in law.',
+    location: 'Malé, Maldives',
+    description: 'Support our legal team with document preparation, research, court filings, and administrative tasks. An excellent opportunity for those looking to build a career in law.',
     requirements: [
       'Degree in Law or related field',
       'Strong organizational skills',
@@ -1044,7 +1094,7 @@ export const jobOpenings = [
       'Fluency in English and Dhivehi',
       'Attention to detail'
     ],
-    posted_date: '2024-03-15',
+    posted_date: '2025-12-08',
   }
 ]
 
@@ -1065,7 +1115,7 @@ export const timeEntries = [
     id: 'te-1',
     lawyer_id: 'lawyer-1',
     matter_id: 'case-1',
-    date: '2024-03-18',
+    date: '2025-12-18',
     hours: 2.5,
     description: 'Contract review and markup',
     billable: true,
@@ -1075,7 +1125,7 @@ export const timeEntries = [
     id: 'te-2',
     lawyer_id: 'lawyer-1',
     matter_id: 'case-2',
-    date: '2024-03-18',
+    date: '2025-12-18',
     hours: 1.5,
     description: 'Client meeting - due diligence discussion',
     billable: true,
@@ -1085,29 +1135,9 @@ export const timeEntries = [
     id: 'te-3',
     lawyer_id: 'lawyer-1',
     matter_id: 'case-3',
-    date: '2024-03-18',
+    date: '2025-12-18',
     hours: 3.0,
     description: 'Court filing preparation',
-    billable: true,
-    rate: 350,
-  },
-  {
-    id: 'te-4',
-    lawyer_id: 'lawyer-2',
-    matter_id: 'case-1',
-    date: '2024-03-18',
-    hours: 2.0,
-    description: 'Legal research on regulatory requirements',
-    billable: true,
-    rate: 300,
-  },
-  {
-    id: 'te-5',
-    lawyer_id: 'lawyer-1',
-    matter_id: 'case-4',
-    date: '2024-03-17',
-    hours: 4.0,
-    description: 'Property deed review and verification',
     billable: true,
     rate: 350,
   },
