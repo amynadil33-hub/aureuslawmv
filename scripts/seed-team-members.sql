@@ -37,14 +37,10 @@ INSERT INTO team_members (
   NULL,
   'Abdul Salaam Arif',
   'abdul-salaam-arif',
-  'Co-Founder & Managing Partner',
+  'Managing Partner',
   'abdulsalaam@aureuslaw.mv',
   NULL,
-  'Abdul Salaam Arif is a leading figure in the Maldivian legal landscape, recognized for his extensive contributions to both the public sector and private legal practice. As Co-Founder and Managing Partner of Aureus Law Firm LLP, he leverages a multi-disciplinary background to provide clients with sophisticated legal solutions in a rapidly evolving regulatory environment.
-
-His career is marked by high-level appointments that reflect his integrity and legal acumen. He served as Chief Ombudsperson for the Office for Transitional Justice (2021–2023), directing investigations into systemic injustices and collaborating with international partners on institutional reform. Previously, he held the position of Vice President of the Tax Appeal Tribunal for five years, overseeing complex tax disputes and contributing significantly to national tax policy and administration.
-
-With nearly a decade of experience as External Legal Counsel for the Bank of Maldives and three years with the Maldives Finance Leasing Company, Abdul Salaam has a deep understanding of banking laws, corporate governance, and risk mitigation. He holds a Master of Comparative Laws and a Bachelor of Laws (Hons) from the International Islamic University Malaysia, and is licensed to practice before the Supreme Court of the Maldives.',
+  'Uz. Abdul Salaam Arif oversees the firm’s operational direction and legal practice development. His experience includes legal advisory, dispute resolution, and regulatory matters within the Maldivian legal landscape.',
   ARRAY[
     'Master of Comparative Laws, International Islamic University Malaysia',
     'Bachelor of Laws (Hons), International Islamic University Malaysia',
@@ -69,14 +65,10 @@ With nearly a decade of experience as External Legal Counsel for the Bank of Mal
   NULL,
   'Hawwa Shahira',
   'hawwa-shahira',
-  'Co-Founder & Partner',
+  'Partner',
   'hawwashahira@aureuslaw.mv',
   NULL,
-  'Hawwa Shahira is a Co-Founder and Partner at Aureus Law Firm LLP, where she advises clients on commercial, employment, regulatory, family, criminal, and compliance-related matters. She is a Licensed Attorney-at-Law in the Republic of Maldives and passed the inaugural Maldives Bar Examination conducted in 2023.
-
-Her work at Aureus includes drafting and reviewing commercial contracts, service agreements, policies, and legal opinions, advising businesses on labour law compliance, disciplinary matters, and regulatory obligations, and liaising with government authorities on behalf of clients.
-
-Before co-founding the firm, she served as Senior Legal Officer at Maldives Civil Aviation Authority, advising on regulatory compliance, enforcement action, risk mitigation, contracts, MOUs, and statutory obligations. She also served as an Investigator at the Ombudsperson''s Office for Transitional Justice and as a Court Officer at the Family Court of Maldives. She holds a Bachelor''s Degree in Shariah and Law with Honours from The Maldives National University.',
+  'Uza. Hawwa Shahira has experience working within the Maldivian legal and regulatory sector, including investigative, compliance, and advisory work within government institutions. Her practice focuses on legal research, dispute resolution support, regulatory matters, and client advisory services.',
   ARRAY[
     'Bachelor of Shariah and Law (Hons), Maldives National University'
   ],

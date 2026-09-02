@@ -7,10 +7,9 @@ import { Button } from '@/components/ui/button'
 import { Section, Container } from '@/components/ui/section'
 
 const features = [
-  'Deep expertise in Maldivian law and regulations',
-  'Client-focused approach with personalized attention',
-  'Proven track record across diverse practice areas',
-  'Commitment to ethical and transparent practice',
+  'Integrity',
+  'Professionalism',
+  'Accountability',
 ]
 
 export function AboutSection() {
@@ -35,7 +34,7 @@ export function AboutSection() {
                       <span className="font-serif text-3xl font-bold text-gold">A</span>
                     </div>
                     <p className="text-stone-light/80 text-lg max-w-xs">
-                      Trusted legal partner for over two decades
+                      Principled, practical, and client-focused legal services
                     </p>
                   </div>
                 </div>
@@ -44,17 +43,11 @@ export function AboutSection() {
                 <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-gold/30" />
               </div>
 
-              {/* Stats Card */}
+              {/* Establishment Card */}
               <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-serif font-medium text-navy">20+</div>
-                    <div className="text-xs text-muted-foreground mt-1">Years</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-serif font-medium text-navy">500+</div>
-                    <div className="text-xs text-muted-foreground mt-1">Clients</div>
-                  </div>
+                <div className="text-center">
+                  <div className="text-3xl font-serif font-medium text-navy">2025</div>
+                  <div className="text-xs text-muted-foreground mt-1">Established</div>
                 </div>
               </div>
             </div>
@@ -75,14 +68,16 @@ export function AboutSection() {
               A Different Kind of Law Firm
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Aureus Law combines deep expertise in Maldivian law with a modern, client-focused approach. 
-              We understand that legal matters can be complex and stressful—our role is to provide clarity, 
-              confidence, and results.
+              Established on 8 December 2025, Aureus Law Firm LLP is a Maldivian law firm
+              committed to providing principled, practical, and client-focused legal services.
+              Built on the values of integrity, professionalism, and accountability, the firm
+              strives to deliver accessible and reliable legal support tailored to the evolving
+              needs of individuals, businesses, and institutions across the Maldives.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Founded with a vision to deliver exceptional legal services, we have grown into one of the 
-              Maldives&apos; most respected law firms. Our team of experienced lawyers brings together diverse 
-              expertise to serve the full spectrum of legal needs.
+              Founded by legal professionals with experience across government and regulatory
+              sectors, Aureus Law Firm LLP combines legal expertise, sound judgment, and a strong
+              understanding of the Maldivian legal and administrative framework.
             </p>
 
             <ul className="mt-8 space-y-3">

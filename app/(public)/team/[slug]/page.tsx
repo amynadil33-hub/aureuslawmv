@@ -4,11 +4,12 @@ import { useParams, notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Mail, Phone, Linkedin, ArrowLeft, Award, BookOpen, Briefcase } from 'lucide-react'
+import { Mail, Phone, Linkedin, ArrowLeft, BookOpen, Briefcase, Languages, Scale } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Section, SectionHeader } from '@/components/ui/section'
-import { teamMembers, practiceAreas } from '@/lib/demo-data'
+import { Section } from '@/components/ui/section'
+import { teamMembers } from '@/lib/demo-data'
+import { fullBios } from '@/lib/team-bios'
 
 export default function TeamMemberPage() {
   const params = useParams()
@@ -20,9 +21,8 @@ export default function TeamMemberPage() {
     notFound()
   }
 
-  const memberPracticeAreas = practiceAreas.filter(p => 
-    member.practice_areas.includes(p.id)
-  )
+  const memberPracticeAreas = member.practice_areas ?? []
+  const fullBio = fullBios[member.slug] || member.bio
 
   return (
     <main>
@@ -46,11 +46,12 @@ export default function TeamMemberPage() {
               className="lg:col-span-1"
             >
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-navy-light">
-                {member.image_url ? (
+                {member.photo_url ? (
                   <Image
-                    src={member.image_url}
+                    src={member.photo_url}
                     alt={member.full_name}
                     fill
+                    priority
                     className="object-cover"
                   />
                 ) : (
@@ -73,7 +74,7 @@ export default function TeamMemberPage() {
               <h1 className="font-serif text-4xl lg:text-5xl font-semibold mb-2">
                 {member.full_name}
               </h1>
-              <p className="text-gold text-xl mb-6">{member.position}</p>
+              <p className="text-gold text-xl mb-6">{member.role_title}</p>
               
               {/* Contact */}
               <div className="flex flex-wrap gap-4 mb-8">
@@ -109,51 +110,34 @@ export default function TeamMemberPage() {
               </div>
 
               {/* Practice Areas */}
-              <div className="mb-8">
-                <h3 className="text-sm font-medium text-stone-light/60 uppercase tracking-wider mb-3">
-                  Practice Areas
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {memberPracticeAreas.map(area => (
-                    <Link key={area.id} href={`/services/${area.slug}`}>
-                      <Badge 
-                        variant="secondary" 
-                        className="bg-navy-light hover:bg-gold hover:text-navy transition-colors cursor-pointer"
-                      >
-                        {area.name}
-                      </Badge>
-                    </Link>
-                  ))}
+              {memberPracticeAreas.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-sm font-medium text-stone-light/60 uppercase tracking-wider mb-3">
+                    Practice Areas
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {memberPracticeAreas.map(area => (
+                      <Link key={area.id} href={`/services/${area.slug}`}>
+                        <Badge
+                          variant="secondary"
+                          className="bg-navy-light hover:bg-gold hover:text-navy transition-colors cursor-pointer"
+                        >
+                          {area.name}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
-              {/* Languages & Admission */}
-              <div className="grid sm:grid-cols-2 gap-6">
-                {member.languages && member.languages.length > 0 && (
-                  <div>
-                    <h3 className="text-sm font-medium text-stone-light/60 uppercase tracking-wider mb-2">
-                      Languages
-                    </h3>
-                    <p className="text-stone-light">{member.languages.join(', ')}</p>
-                  </div>
-                )}
-                {member.bar_admissions && member.bar_admissions.length > 0 && (
-                  <div>
-                    <h3 className="text-sm font-medium text-stone-light/60 uppercase tracking-wider mb-2">
-                      Bar Admissions
-                    </h3>
-                    <p className="text-stone-light">{member.bar_admissions.join(', ')}</p>
-                  </div>
-                )}
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Bio Section */}
+      {/* About and facts */}
       <Section>
-        <div className="max-w-4xl mx-auto">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -161,20 +145,66 @@ export default function TeamMemberPage() {
             transition={{ duration: 0.6 }}
             className="prose prose-lg max-w-none"
           >
-            <h2 className="font-serif text-3xl font-semibold text-navy mb-6">Biography</h2>
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-gold">Profile</p>
+            <h2 className="font-serif text-3xl font-semibold text-navy mb-6">About</h2>
             <div className="text-muted-foreground leading-relaxed whitespace-pre-line">
-              {member.bio}
+              {fullBio || `${member.full_name} is a member of the Aureus Law Firm team.`}
             </div>
           </motion.div>
+
+          <motion.aside
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="rounded-xl border border-stone-dark bg-stone p-6"
+          >
+            <h2 className="font-serif text-2xl font-semibold text-navy">Profile facts</h2>
+            <dl className="mt-6 space-y-5">
+              <div className="flex gap-3">
+                <Briefcase className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                <div>
+                  <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Role</dt>
+                  <dd className="mt-1 text-sm font-medium text-navy">{member.role_title}</dd>
+                </div>
+              </div>
+              {member.years_experience && (
+                <div className="flex gap-3">
+                  <Scale className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <div>
+                    <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Experience</dt>
+                    <dd className="mt-1 text-sm font-medium text-navy">{member.years_experience}+ years</dd>
+                  </div>
+                </div>
+              )}
+              {member.languages && member.languages.length > 0 && (
+                <div className="flex gap-3">
+                  <Languages className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <div>
+                    <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Languages</dt>
+                    <dd className="mt-1 text-sm font-medium text-navy">{member.languages.join(', ')}</dd>
+                  </div>
+                </div>
+              )}
+              {member.admissions && member.admissions.length > 0 && (
+                <div className="flex gap-3">
+                  <BookOpen className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
+                  <div>
+                    <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Admissions</dt>
+                    <dd className="mt-1 text-sm font-medium text-navy">{member.admissions.join(', ')}</dd>
+                  </div>
+                </div>
+              )}
+            </dl>
+          </motion.aside>
         </div>
       </Section>
 
-      {/* Education & Experience */}
-      <Section className="bg-stone">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Education */}
-            {member.education && member.education.length > 0 && (
+      {/* Education */}
+      {member.education && member.education.length > 0 && (
+        <Section className="bg-stone">
+          <div className="max-w-4xl mx-auto">
+            <div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -188,45 +218,17 @@ export default function TeamMemberPage() {
                   <h3 className="font-serif text-2xl font-semibold text-navy">Education</h3>
                 </div>
                 <ul className="space-y-4">
-                  {member.education.map((edu, idx) => (
+                  {member.education.map((education, idx) => (
                     <li key={idx} className="pl-4 border-l-2 border-gold/30">
-                      <p className="font-medium text-navy">{edu.degree}</p>
-                      <p className="text-sm text-muted-foreground">{edu.institution}</p>
-                      <p className="text-sm text-muted-foreground">{edu.year}</p>
+                      <p className="font-medium text-navy">{education}</p>
                     </li>
                   ))}
                 </ul>
               </motion.div>
-            )}
-
-            {/* Awards */}
-            {member.awards && member.awards.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-gold/10 rounded-md">
-                    <Award className="h-5 w-5 text-gold" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-semibold text-navy">Recognition</h3>
-                </div>
-                <ul className="space-y-4">
-                  {member.awards.map((award, idx) => (
-                    <li key={idx} className="pl-4 border-l-2 border-gold/30">
-                      <p className="font-medium text-navy">{award.title}</p>
-                      <p className="text-sm text-muted-foreground">{award.organization}</p>
-                      <p className="text-sm text-muted-foreground">{award.year}</p>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            )}
+            </div>
           </div>
-        </div>
-      </Section>
+        </Section>
+      )}
 
       {/* CTA */}
       <Section className="bg-navy text-stone-light">

@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Checkbox } from '@/components/ui/checkbox'
+import { createClient } from '@/lib/supabase/client'
 
 export default function PortalLoginPage() {
   const router = useRouter()
@@ -21,11 +22,20 @@ export default function PortalLoginPage() {
     setIsLoading(true)
     setError('')
 
-    // Simulate login - in production, this would call Supabase Auth
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    // Demo login - accept any credentials
+    const formData = new FormData(e.currentTarget)
+    const email = String(formData.get('email') || '').trim()
+    const password = String(formData.get('password') || '')
+    const supabase = createClient()
+    const { error: signInError } = await supabase.auth.signInWithPassword({ email, password })
+
+    if (signInError) {
+      setError('Invalid email or password. Please check your details and try again.')
+      setIsLoading(false)
+      return
+    }
+
     router.push('/portal/dashboard')
+    router.refresh()
   }
 
   return (

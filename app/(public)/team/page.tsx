@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, Phone } from 'lucide-react'
 import { Section, SectionHeader, Container } from '@/components/ui/section'
 import { teamMembers } from '@/lib/demo-data'
+import { shortBios } from '@/lib/team-bios'
 
 export const metadata: Metadata = {
   title: 'Our Team | Aureus Law',
@@ -49,15 +51,25 @@ export default function TeamPage() {
             {partners.map((member) => (
               <Link key={member.id} href={`/team/${member.slug}`}>
                 <div className="group">
-                  {/* Photo Placeholder */}
+                  {/* Photo */}
                   <div className="aspect-[3/4] bg-gradient-to-br from-navy to-navy-light rounded-xl overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
-                        <span className="font-serif text-2xl font-semibold text-gold">
-                          {member.full_name.split(' ').map(n => n[0]).join('')}
-                        </span>
+                    {member.photo_url ? (
+                      <Image
+                        src={member.photo_url}
+                        alt={member.full_name}
+                        fill
+                        sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
+                          <span className="font-serif text-2xl font-semibold text-gold">
+                            {member.full_name.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
                       </div>
-                    </div>
+                    )}
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                       {member.email && (
@@ -78,11 +90,17 @@ export default function TeamPage() {
                       {member.full_name}
                     </h3>
                     <p className="text-sm text-gold">{member.role_title}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {shortBios[member.slug] || member.bio}
+                    </p>
                     {member.years_experience && (
                       <p className="mt-1 text-xs text-muted-foreground">
                         {member.years_experience} years experience
                       </p>
                     )}
+                    <p className="mt-4 text-sm font-medium text-navy transition-colors group-hover:text-gold">
+                      View full profile →
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -105,15 +123,25 @@ export default function TeamPage() {
               {associates.map((member) => (
                 <Link key={member.id} href={`/team/${member.slug}`}>
                   <div className="group">
-                    {/* Photo Placeholder */}
+                    {/* Photo */}
                     <div className="aspect-[3/4] bg-gradient-to-br from-navy to-navy-light rounded-xl overflow-hidden relative">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
-                          <span className="font-serif text-2xl font-semibold text-gold">
-                            {member.full_name.split(' ').map(n => n[0]).join('')}
-                          </span>
+                      {member.photo_url ? (
+                        <Image
+                          src={member.photo_url}
+                          alt={member.full_name}
+                          fill
+                          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
+                            <span className="font-serif text-2xl font-semibold text-gold">
+                              {member.full_name.split(' ').map(n => n[0]).join('')}
+                            </span>
+                          </div>
                         </div>
-                      </div>
+                      )}
                       <div className="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                         {member.email && (
                           <span className="p-3 bg-card/10 rounded-full">
@@ -133,11 +161,17 @@ export default function TeamPage() {
                         {member.full_name}
                       </h3>
                       <p className="text-sm text-gold">{member.role_title}</p>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                        {shortBios[member.slug] || member.bio}
+                      </p>
                       {member.years_experience && (
                         <p className="mt-1 text-xs text-muted-foreground">
                           {member.years_experience} years experience
                         </p>
                       )}
+                      <p className="mt-4 text-sm font-medium text-navy transition-colors group-hover:text-gold">
+                        View full profile →
+                      </p>
                     </div>
                   </div>
                 </Link>

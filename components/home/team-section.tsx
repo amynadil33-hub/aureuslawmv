@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, Mail, Linkedin } from 'lucide-react'
@@ -29,15 +30,25 @@ export function TeamSection() {
             >
               <Link href={`/team/${member.slug}`}>
                 <div className="group">
-                  {/* Photo Placeholder */}
+                  {/* Photo */}
                   <div className="aspect-[3/4] bg-gradient-to-br from-navy to-navy-light rounded-xl overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
-                        <span className="font-serif text-2xl font-semibold text-gold">
-                          {member.full_name.split(' ').map(n => n[0]).join('')}
-                        </span>
+                    {member.photo_url ? (
+                      <Image
+                        src={member.photo_url}
+                        alt={member.full_name}
+                        fill
+                        sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
+                          <span className="font-serif text-2xl font-semibold text-gold">
+                            {member.full_name.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
                       </div>
-                    </div>
+                    )}
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                       {member.email && (

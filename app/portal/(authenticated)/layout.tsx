@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -22,6 +22,7 @@ import {
   Clock,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -77,14 +78,6 @@ const sidebarNavItems = [
   },
 ]
 
-// Demo user data
-const currentUser = {
-  name: 'Ahmed Hassan',
-  email: 'ahmed.hassan@aureuslaw.mv',
-  role: 'Senior Associate',
-  avatar: null,
-}
-
 export default function PortalLayout({
   children,
 }: {
@@ -92,6 +85,46 @@ export default function PortalLayout({
 }) {
   const pathname = usePathname()
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [currentUser, setCurrentUser] = useState({
+    name: 'Aureus Team Member',
+    email: '',
+    role: 'Team Member',
+    avatar: null as string | null,
+  })
+
+  useEffect(() => {
+    const loadCurrentUser = async () => {
+      const supabase = createClient()
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
+
+      if (!user) return
+
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('full_name, email, role, avatar_url')
+        .eq('id', user.id)
+        .maybeSingle()
+
+      setCurrentUser({
+        name: profile?.full_name || user.user_metadata.full_name || user.email || 'Aureus Team Member',
+        email: profile?.email || user.email || '',
+        role: profile?.role
+          ? profile.role.replaceAll('_', ' ').replace(/\b\w/g, (letter: string) => letter.toUpperCase())
+          : 'Team Member',
+        avatar: profile?.avatar_url || null,
+      })
+    }
+
+    void loadCurrentUser()
+  }, [])
+
+  const handleSignOut = async () => {
+    const supabase = createClient()
+    await supabase.auth.signOut()
+    window.location.assign('/portal/login')
+  }
 
   return (
     <div className="min-h-screen bg-stone">
@@ -158,13 +191,14 @@ export default function PortalLayout({
               <Settings className="h-5 w-5" />
               Settings
             </Link>
-            <Link
-              href="/portal/login"
+            <button
+              type="button"
+              onClick={handleSignOut}
               className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-stone-light/70 hover:bg-navy-light hover:text-stone-light transition-colors"
             >
               <LogOut className="h-5 w-5" />
               Sign Out
-            </Link>
+            </button>
           </div>
         </div>
       </aside>
@@ -276,10 +310,8 @@ export default function PortalLayout({
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem asChild>
-                    <Link href="/portal/login" className="text-destructive">
-                      Sign Out
-                    </Link>
+                  <DropdownMenuItem onSelect={handleSignOut} className="text-destructive">
+                    Sign Out
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

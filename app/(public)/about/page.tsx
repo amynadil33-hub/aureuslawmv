@@ -3,273 +3,307 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Scale, Users, Globe, Award, Target, Heart, Shield, Lightbulb } from 'lucide-react'
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Check,
+  Landmark,
+  Scale,
+  ShieldCheck,
+  Users,
+} from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Section, SectionHeader } from '@/components/ui/section'
-import { teamMembers, firmStats, firmValues } from '@/lib/demo-data'
+import { teamMembers } from '@/lib/demo-data'
 
-const timeline = [
+const values = [
   {
-    year: '2008',
-    title: 'Foundation',
-    description: 'Aureus Law was established in Malé with a vision to provide world-class legal services in the Maldives.'
+    title: 'Integrity',
+    description: 'Principled advice and representation grounded in honesty and sound professional judgment.',
+    icon: ShieldCheck,
   },
   {
-    year: '2012',
-    title: 'Corporate Practice Expansion',
-    description: 'Expanded our corporate and commercial practice to serve growing international investment in the Maldives.'
+    title: 'Professionalism',
+    description: 'Clear, dependable legal service delivered with care, discretion, and respect.',
+    icon: Scale,
   },
   {
-    year: '2016',
-    title: 'Tourism & Hospitality Focus',
-    description: 'Became the leading firm for resort development and tourism-related legal matters.'
-  },
-  {
-    year: '2020',
-    title: 'Digital Transformation',
-    description: 'Launched our client portal and modernized operations to better serve clients remotely.'
-  },
-  {
-    year: '2024',
-    title: 'Regional Recognition',
-    description: 'Recognized as a leading law firm in the Maldives by international legal directories.'
+    title: 'Accountability',
+    description: 'A strong commitment to our clients, their objectives, and the quality of every engagement.',
+    icon: Users,
   },
 ]
 
-const valueIcons: Record<string, React.ElementType> = {
-  'Excellence': Award,
-  'Integrity': Shield,
-  'Client Focus': Heart,
-  'Innovation': Lightbulb,
-}
+const practiceAreas = [
+  {
+    title: 'Litigation & Dispute Resolution',
+    description:
+      'We advise, assist, and represent clients in legal disputes, tribunal proceedings, and court litigation, including:',
+    icon: Landmark,
+    services: [
+      'Civil and commercial disputes',
+      'Employment and labour matters',
+      'Family and personal matters',
+      'Criminal defence matters',
+      'Contractual disputes',
+      'Mediation and negotiated settlements',
+      'Tribunal and appellate matters',
+      'Judicial review and administrative law matters',
+    ],
+  },
+  {
+    title: 'Corporate, Regulatory & Advisory Services',
+    description:
+      'We provide legal advisory services to businesses, institutions, and private clients, including:',
+    icon: BriefcaseBusiness,
+    services: [
+      'Commercial contract drafting, review and negotiation',
+      'Employment documentation and human resources advisory',
+      'Governance and administrative advisory',
+      'Procurement and policy-related legal support',
+      'Foreign investment and business structuring support',
+      'Legal research and strategic advisory services',
+      'Regulatory reviews and compliance assessments',
+      'Risk management and legal due diligence',
+      'Tax advisory and regulatory tax compliance',
+    ],
+  },
+]
 
 export default function AboutPage() {
-  const partners = teamMembers.filter(m => m.role_title?.toLowerCase().includes('partner'))
+  const partners = teamMembers.filter((member) =>
+    member.role_title?.toLowerCase().includes('partner'),
+  )
 
   return (
     <main>
-      {/* Hero */}
-      <section className="relative bg-navy text-stone-light py-20 lg:py-32">
-        <div className="container mx-auto px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-navy via-navy to-navy-light py-20 text-stone-light lg:py-32">
+        <div className="absolute inset-0 opacity-10" aria-hidden="true">
+          <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full border border-gold" />
+          <div className="absolute right-20 top-20 h-64 w-64 rounded-full border border-gold" />
+        </div>
+        <div className="container relative z-10 mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl"
+            className="max-w-4xl"
           >
-            <p className="text-gold text-sm font-medium tracking-wider uppercase mb-4">
+            <p className="mb-4 text-sm font-medium uppercase tracking-wider text-gold">
               About Aureus Law
             </p>
-            <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-semibold mb-6 text-balance">
-              Strategic Legal Counsel for the Maldives
+            <h1 className="text-balance font-serif text-4xl font-semibold lg:text-5xl xl:text-6xl">
+              Principled counsel. Practical solutions.
             </h1>
-            <p className="text-xl text-stone-light/80 leading-relaxed">
-              For over 15 years, Aureus Law has been at the forefront of legal practice in the Maldives, 
-              providing sophisticated counsel to individuals, businesses, and institutions.
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-light/80 lg:text-xl">
+              Established on 8 December 2025, Aureus Law Firm LLP is a Maldivian law firm
+              committed to providing principled, practical, and client-focused legal services.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-gold py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {firmStats.map((stat, idx) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="text-center"
-              >
-                <p className="font-serif text-4xl lg:text-5xl font-semibold text-navy">
-                  {stat.value}
-                </p>
-                <p className="text-navy/70 mt-1">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision */}
       <Section>
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 bg-gold/10 rounded-lg">
-                <Target className="h-6 w-6 text-gold" />
-              </div>
-              <h2 className="font-serif text-3xl font-semibold text-navy">Our Mission</h2>
-            </div>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              To provide exceptional legal services that empower our clients to achieve their goals, 
-              while upholding the highest standards of professional integrity and contributing to the 
-              development of legal practice in the Maldives.
+            <p className="mb-3 text-sm font-medium uppercase tracking-wider text-gold">
+              Firm Profile &amp; Overview
             </p>
+            <h2 className="font-serif text-3xl font-semibold leading-tight text-navy lg:text-4xl">
+              Legal service built around clarity and trust
+            </h2>
+            <div className="mt-6 h-px w-20 bg-gold" />
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            className="space-y-5 text-lg leading-relaxed text-muted-foreground"
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 bg-gold/10 rounded-lg">
-                <Globe className="h-6 w-6 text-gold" />
-              </div>
-              <h2 className="font-serif text-3xl font-semibold text-navy">Our Vision</h2>
-            </div>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              To be the most trusted and respected law firm in the Maldives, recognized internationally 
-              for our expertise, innovation, and commitment to client success in an evolving legal landscape.
+            <p>
+              Aureus Law Firm LLP is a growing full-service Maldivian law firm providing legal
+              advisory and dispute resolution services across a broad range of practice areas.
+            </p>
+            <p>
+              The firm was established with the objective of delivering modern, accessible, and
+              professional legal services founded on integrity, clarity, and strong client
+              relationships.
+            </p>
+            <p>
+              Founded by legal professionals with experience across government and regulatory
+              sectors, Aureus Law Firm LLP combines legal expertise, sound judgment, and a strong
+              understanding of the Maldivian legal and administrative framework.
+            </p>
+            <p>
+              Our lawyers bring experience from government legal and regulatory institutions,
+              providing practical insight into administrative processes, regulatory compliance,
+              investigations, policy interpretation, and dispute resolution within the Maldivian
+              context.
+            </p>
+            <p>
+              We understand that legal matters are often complex, sensitive, and high stakes.
+              Whether assisting individuals, businesses, or institutions, we are committed to
+              providing clear legal advice, practical solutions, and dependable representation
+              tailored to each client&apos;s specific needs and circumstances.
             </p>
           </motion.div>
         </div>
       </Section>
 
-      {/* Values */}
       <Section className="bg-stone">
         <SectionHeader
           title="Our Values"
-          subtitle="The principles that guide everything we do"
-          centered
+          subtitle="The principles at the foundation of our practice"
+          align="center"
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {firmValues.map((value, idx) => {
-            const Icon = valueIcons[value.title] || Scale
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {values.map((value, index) => {
+            const Icon = value.icon
             return (
-              <motion.div
+              <motion.article
                 key={value.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="bg-card p-8 rounded-lg border border-border"
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="rounded-xl border border-border bg-card p-8"
               >
-                <div className="p-3 bg-gold/10 rounded-lg w-fit mb-4">
+                <div className="mb-5 w-fit rounded-lg bg-gold/10 p-3">
                   <Icon className="h-6 w-6 text-gold" />
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-navy mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {value.description}
-                </p>
-              </motion.div>
+                <h3 className="font-serif text-2xl font-semibold text-navy">{value.title}</h3>
+                <p className="mt-3 leading-relaxed text-muted-foreground">{value.description}</p>
+              </motion.article>
             )
           })}
         </div>
       </Section>
 
-      {/* Timeline */}
       <Section>
         <SectionHeader
-          title="Our Journey"
-          subtitle="Key milestones in our firm&apos;s history"
-          centered
+          title="Practice Areas"
+          subtitle="Practical advice and dependable representation for individuals, businesses, and institutions"
+          align="center"
         />
-        <div className="max-w-3xl mx-auto mt-12">
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-px bg-border" />
-            
-            {timeline.map((item, idx) => (
-              <motion.div
-                key={item.year}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+          {practiceAreas.map((area, index) => {
+            const Icon = area.icon
+            return (
+              <motion.article
+                key={area.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative pl-20 pb-12 last:pb-0"
+                transition={{ duration: 0.55, delay: index * 0.1 }}
+                className="rounded-xl border border-border bg-card p-7 shadow-sm lg:p-9"
               >
-                {/* Year circle */}
-                <div className="absolute left-0 w-16 h-16 bg-gold rounded-full flex items-center justify-center">
-                  <span className="font-serif text-sm font-semibold text-navy">{item.year}</span>
+                <div className="mb-6 flex items-start gap-4">
+                  <div className="shrink-0 rounded-lg bg-gold/10 p-3">
+                    <Icon className="h-6 w-6 text-gold" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl font-semibold leading-tight text-navy">
+                      {area.title}
+                    </h3>
+                    <p className="mt-3 leading-relaxed text-muted-foreground">{area.description}</p>
+                  </div>
                 </div>
-                
-                <div className="pt-3">
-                  <h3 className="font-serif text-xl font-semibold text-navy mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                <ul className="space-y-3 border-t border-border pt-6">
+                  {area.services.map((service) => (
+                    <li key={service} className="flex gap-3 text-sm leading-relaxed text-navy/80 sm:text-base">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                      <span>{service}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.article>
+            )
+          })}
         </div>
-      </Section>
-
-      {/* Leadership */}
-      <Section className="bg-navy text-stone-light">
-        <SectionHeader
-          title="Our Leadership"
-          subtitle="Meet the partners guiding our firm"
-          centered
-          dark
-        />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {partners.map((partner, idx) => (
-            <motion.div
-              key={partner.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-            >
-              <Link href={`/team/${partner.slug}`} className="group block">
-                <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-navy-light mb-4">
-                  {partner.photo_url ? (
-                    <Image
-                      src={partner.photo_url}
-                      alt={partner.full_name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-5xl font-serif text-gold">
-                        {partner.full_name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                  )}
-                </div>
-                <h3 className="font-serif text-xl font-semibold group-hover:text-gold transition-colors">
-                  {partner.full_name}
-                </h3>
-                <p className="text-gold text-sm mt-1">{partner.role_title}</p>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-        <div className="text-center mt-12">
-          <Button asChild variant="outline" className="border-stone-light/30 text-stone-light hover:bg-stone-light hover:text-navy">
-            <Link href="/team">View Full Team</Link>
+        <div className="mt-10 text-center">
+          <Button asChild variant="outline">
+            <Link href="/services">
+              Explore all services
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </Button>
         </div>
       </Section>
 
-      {/* CTA */}
+      {partners.length > 0 && (
+        <Section className="bg-navy text-stone-light">
+          <SectionHeader
+            title="Our Leadership"
+            subtitle="Meet the partners guiding our firm"
+            align="center"
+            variant="light"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {partners.map((partner, index) => (
+              <motion.div
+                key={partner.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <Link href={`/team/${partner.slug}`} className="group block">
+                  <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-lg bg-navy-light">
+                    {partner.photo_url ? (
+                      <Image
+                        src={partner.photo_url}
+                        alt={partner.full_name}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="font-serif text-5xl text-gold">
+                          {partner.full_name
+                            .split(' ')
+                            .map((name) => name[0])
+                            .join('')}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <h3 className="font-serif text-xl font-semibold transition-colors group-hover:text-gold">
+                    {partner.full_name}
+                  </h3>
+                  <p className="mt-1 text-sm text-gold">{partner.role_title}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button
+              asChild
+              variant="outline"
+              className="border-stone-light/30 text-stone-light hover:bg-stone-light hover:text-navy"
+            >
+              <Link href="/team">View Full Team</Link>
+            </Button>
+          </div>
+        </Section>
+      )}
+
       <Section>
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-serif text-3xl lg:text-4xl font-semibold text-navy mb-4">
-            Ready to Work Together?
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="font-serif text-3xl font-semibold text-navy lg:text-4xl">
+            How Can We Help?
           </h2>
-          <p className="text-muted-foreground mb-8">
-            Contact us today to discuss how Aureus Law can support your legal needs.
+          <p className="mb-8 mt-4 text-muted-foreground">
+            Contact us to discuss how Aureus Law Firm LLP can support your legal needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-gold hover:bg-gold-dark text-card">
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <Button asChild size="lg" className="bg-gold text-card hover:bg-gold-dark">
               <Link href="/contact">Contact Us</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
