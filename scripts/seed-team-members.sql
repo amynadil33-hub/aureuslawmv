@@ -1,7 +1,7 @@
 -- =============================================================
 -- Aureus Law Firm LLP — Supabase Seed: team_members
 -- Run this in your Supabase SQL Editor after running your schema migration.
--- Photos are hosted on the Hercules CDN.
+-- Portrait assets are served locally from /public/images/team.
 -- =============================================================
 
 -- Clear existing placeholder data first
@@ -49,7 +49,7 @@ INSERT INTO team_members (
   ARRAY['Supreme Court of the Maldives'],
   ARRAY['Dhivehi', 'English'],
   15,
-  'https://hercules-cdn.com/file_oocqZQeJoPMU5bvd51Ic2pnk',
+  '/images/team/abdul-salaam-arif-corporate.png',
   TRUE,
   TRUE,
   TRUE,
@@ -75,7 +75,7 @@ INSERT INTO team_members (
   ARRAY['Bar Council of the Maldives (2023)'],
   ARRAY['Dhivehi', 'English'],
   NULL,
-  'https://hercules-cdn.com/file_a5SHXeBxIkQNwr8b7uCaDOik',
+  '/images/team/hawwa-shahira-corporate.png',
   TRUE,
   TRUE,
   TRUE,
@@ -106,7 +106,7 @@ She has further worked with the National Centre for Information Technology, supp
   NULL,
   ARRAY['Dhivehi', 'English'],
   NULL,
-  'https://hercules-cdn.com/file_ad30uex21BfKeT1lu5UPu6Mn',
+  '/images/team/samaahath-abdul-latheef-corporate.png',
   FALSE,
   TRUE,
   TRUE,
@@ -137,7 +137,7 @@ Minha has further strengthened her practice through specialized training in juve
   NULL,
   ARRAY['Dhivehi', 'English'],
   NULL,
-  'https://hercules-cdn.com/file_J6zxiJ5Oq0ywCSzGqie5ZJd0',
+  '/images/team/minha-abdul-muhsin-corporate.png',
   FALSE,
   TRUE,
   TRUE,
@@ -167,7 +167,7 @@ He has held leadership roles including Chairperson of the Sexual Harassment Inve
   NULL,
   ARRAY['Dhivehi', 'English'],
   10,
-  'https://hercules-cdn.com/file_27XHwgoTrYulUJAVcKgCtHXm',
+  '/images/team/mohamed-abdul-ghanee-corporate.png',
   FALSE,
   TRUE,
   TRUE,
@@ -197,7 +197,7 @@ He also served at the Ombudsperson''s Office for Transitional Justice investigat
   NULL,
   ARRAY['Dhivehi', 'English'],
   NULL,
-  'https://hercules-cdn.com/file_V8L9XCC0an7D6wBT6XkppSwG',
+  '/images/team/ahmed-raaiz-corporate.png',
   FALSE,
   FALSE,
   TRUE,
@@ -229,7 +229,7 @@ His experience includes advising on the legality of tax matters, financial and r
   ARRAY['Bar Council of the Maldives'],
   ARRAY['Dhivehi', 'English'],
   NULL,
-  'https://hercules-cdn.com/file_iJZw69vBG2s6p4zlDADEm82R',
+  '/images/team/ibrahim-rasheed-corporate.png',
   FALSE,
   FALSE,
   TRUE,

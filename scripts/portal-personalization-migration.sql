@@ -1,8 +1,16 @@
 -- Portal personalization and missing-module migration
 -- Safe to run in the Supabase SQL Editor for an existing Aureus database.
 
+CREATE TABLE IF NOT EXISTS case_assignments (
+  case_id UUID NOT NULL REFERENCES cases(id) ON DELETE CASCADE,
+  profile_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
+  role TEXT DEFAULT 'assigned',
+  assigned_at TIMESTAMPTZ DEFAULT NOW(),
+  PRIMARY KEY (case_id, profile_id)
+);
+
 CREATE TABLE IF NOT EXISTS portal_messages (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   sender_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   recipient_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   subject TEXT,
@@ -12,7 +20,7 @@ CREATE TABLE IF NOT EXISTS portal_messages (
 );
 
 CREATE TABLE IF NOT EXISTS time_entries (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   profile_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   case_id UUID REFERENCES cases(id) ON DELETE SET NULL,
   entry_date DATE NOT NULL DEFAULT CURRENT_DATE,
@@ -30,9 +38,29 @@ ALTER TABLE consultation_requests
 CREATE INDEX IF NOT EXISTS idx_portal_messages_recipient ON portal_messages(recipient_id, created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_portal_messages_sender ON portal_messages(sender_id, created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_time_entries_profile_date ON time_entries(profile_id, entry_date DESC);
+CREATE INDEX IF NOT EXISTS idx_case_assignments_profile ON case_assignments(profile_id);
 
+ALTER TABLE case_assignments ENABLE ROW LEVEL SECURITY;
 ALTER TABLE portal_messages ENABLE ROW LEVEL SECURITY;
 ALTER TABLE time_entries ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS "Users can view their case assignments" ON case_assignments;
+CREATE POLICY "Users can view their case assignments" ON case_assignments FOR SELECT TO authenticated
+USING (
+  profile_id = auth.uid()
+  OR EXISTS (
+    SELECT 1 FROM profiles
+    WHERE id = auth.uid() AND role IN ('super_admin', 'admin', 'partner')
+  )
+);
+
+DROP POLICY IF EXISTS "Creators can view their cases" ON cases;
+CREATE POLICY "Creators can view their cases" ON cases FOR SELECT TO authenticated
+USING (created_by = auth.uid());
+
+DROP POLICY IF EXISTS "Creators can update their cases" ON cases;
+CREATE POLICY "Creators can update their cases" ON cases FOR UPDATE TO authenticated
+USING (created_by = auth.uid()) WITH CHECK (created_by = auth.uid());
 
 DROP POLICY IF EXISTS "Public can request consultations" ON consultation_requests;
 CREATE POLICY "Public can request consultations" ON consultation_requests FOR INSERT TO anon, authenticated
