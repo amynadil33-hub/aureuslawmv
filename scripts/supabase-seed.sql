@@ -1,5 +1,11 @@
--- Aureus Law Firm Seed Data
--- Run this AFTER the schema has been created
+-- LEGACY DEMO SEED — DO NOT RUN ON AN EXISTING AUREUS DATABASE.
+-- This file contains the original demonstration content and is retained only
+-- as a development reference. Running it again can duplicate non-unique demo
+-- records and conflict with existing unique slugs.
+--
+-- For an existing database, run portal-personalization-migration.sql instead.
+-- For the current official team list, use seed-team-members.sql only when you
+-- intentionally want to replace the team_members table contents.
 
 -- ============================================
 -- PRACTICE AREAS
