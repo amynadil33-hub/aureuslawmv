@@ -39,7 +39,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   }
 
   // Get related lawyers (in production, this would come from junction table)
-  const relatedLawyers = teamMembers.slice(0, 3)
+  const relatedLawyers = teamMembers.filter((member) => member.is_visible).slice(0, 3)
   
   // Get related articles
   const relatedArticles = articles.filter(a => a.status === 'published').slice(0, 2)
@@ -146,11 +146,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   </Link>
                 </Button>
                 <a
-                  href="tel:+9603001000"
+                  href="tel:+9607673636"
                   className="mt-4 flex items-center justify-center gap-2 text-stone-light/80 hover:text-gold transition-colors"
                 >
                   <Phone className="h-4 w-4" />
-                  +960 300 1000
+                  +960 767 3636
                 </a>
               </div>
 

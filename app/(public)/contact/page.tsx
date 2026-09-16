@@ -3,14 +3,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Clock, Send, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Facebook, Instagram, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Section, SectionHeader } from '@/components/ui/section'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { contactInfo, practiceAreas } from '@/lib/demo-data'
+import { contactInfo, practiceAreas, socialLinks } from '@/lib/demo-data'
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -276,6 +276,45 @@ export default function ContactPage() {
                   <span className="font-medium text-navy">View Career Opportunities</span>
                   <ArrowRight className="h-4 w-4 text-gold group-hover:translate-x-1 transition-transform" />
                 </Link>
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-navy p-8 text-stone-light">
+              <h3 className="font-serif text-xl font-semibold">Connect With Us</h3>
+              <p className="mt-2 text-sm text-stone-light/70">
+                Follow Aureus Law or start a conversation with our team.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-navy-light px-4 py-3 text-sm transition-colors hover:bg-gold hover:text-navy"
+                  aria-label="Aureus Law on Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                  Facebook
+                </a>
+                <a
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-navy-light px-4 py-3 text-sm transition-colors hover:bg-gold hover:text-navy"
+                  aria-label="Aureus Law on Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                  Instagram
+                </a>
+                <a
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-navy-light px-4 py-3 text-sm transition-colors hover:bg-gold hover:text-navy"
+                  aria-label="Chat with Aureus Law on WhatsApp"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  WhatsApp
+                </a>
               </div>
             </div>
           </motion.div>

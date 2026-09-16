@@ -15,7 +15,7 @@ export default function TeamMemberPage() {
   const params = useParams()
   const slug = params.slug as string
   
-  const member = teamMembers.find(m => m.slug === slug)
+  const member = teamMembers.find(m => m.slug === slug && m.is_visible)
   
   if (!member) {
     notFound()

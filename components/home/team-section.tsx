@@ -8,7 +8,7 @@ import { Section, SectionHeader, Container } from '@/components/ui/section'
 import { teamMembers } from '@/lib/demo-data'
 
 export function TeamSection() {
-  const featured = teamMembers.filter(m => m.is_featured).slice(0, 4)
+  const featured = teamMembers.filter(m => m.is_visible && m.is_featured).slice(0, 4)
 
   return (
     <Section>

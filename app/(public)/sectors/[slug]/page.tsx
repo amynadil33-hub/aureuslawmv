@@ -153,11 +153,11 @@ export default async function SectorDetailPage({ params }: PageProps) {
                   </Link>
                 </Button>
                 <a
-                  href="tel:+9603001000"
+                  href="tel:+9607673636"
                   className="mt-4 flex items-center justify-center gap-2 text-stone-light/80 transition-colors hover:text-gold"
                 >
                   <Phone className="h-4 w-4" />
-                  +960 300 1000
+                  +960 767 3636
                 </a>
               </div>
             </aside>

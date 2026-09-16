@@ -85,7 +85,7 @@ INSERT INTO testimonials (client_name, client_title, company_name, content, rati
 -- ============================================
 
 INSERT INTO faqs (question, answer, category, sort_order) VALUES
-('How do I schedule a consultation with Aureus Law?', 'You can schedule a consultation by filling out our online booking form, calling our office at +960 300 1000, or sending an email to contact@aureuslaw.mv. We typically respond within one business day and will arrange a time that suits your schedule.', 'General', 1),
+('How do I schedule a consultation with Aureus Law?', 'You can schedule a consultation by filling out our online booking form, calling our office at +960 767 3636, or sending an email to hello@aureuslaw.mv. We typically respond within one business day and will arrange a time that suits your schedule.', 'General', 1),
 ('What are your fees and billing practices?', 'Our fees vary depending on the nature and complexity of the matter. We offer fixed-fee arrangements for routine matters and hourly billing for more complex work. During your initial consultation, we will provide a clear estimate of costs and explain our billing practices.', 'General', 2),
 ('Do you offer services in languages other than English and Dhivehi?', 'Yes, several of our lawyers are fluent in additional languages including Arabic, Hindi, and Sinhala. Please let us know your language preference when scheduling your consultation.', 'General', 3),
 ('Can you represent clients in other countries?', 'While we are qualified to practice Maldivian law, we work with a network of trusted law firms across the region and can coordinate with international counsel when matters have cross-border elements.', 'General', 4),
@@ -142,7 +142,7 @@ WHERE NOT EXISTS (SELECT 1 FROM articles WHERE slug = 'corporate-governance-best
 -- ============================================
 
 INSERT INTO site_settings (key, value) VALUES
-('contact_info', '{"phone": "+960 300 1000", "email": "contact@aureuslaw.mv", "address": "Aureus Law, 4th Floor, Champa Building, Boduthakurufaanu Magu, Malé, Maldives 20026", "hours": "Sunday - Thursday: 8:00 AM - 5:00 PM"}'),
+('contact_info', '{"phone": "+960 767 3636", "email": "hello@aureuslaw.mv", "address": "Aureus Law, 4th Floor, Champa Building, Boduthakurufaanu Magu, Malé, Maldives 20026", "hours": "Sunday - Thursday: 8:00 AM - 5:00 PM"}'),
 ('social_links', '{"linkedin": "https://linkedin.com/company/aureuslaw", "twitter": "https://twitter.com/aureuslaw"}'),
 ('hero_content', '{"headline": "Strategic Legal Counsel for the Maldives", "subheadline": "Trusted guidance for individuals, businesses, and institutions across every legal challenge.", "cta_text": "Book a Consultation", "cta_link": "/contact/book-consultation"}'),
 ('about_intro', '{"title": "A Different Kind of Law Firm", "content": "Aureus Law combines deep expertise in Maldivian law with a modern, client-focused approach. We understand that legal matters can be complex and stressful—our role is to provide clarity, confidence, and results."}')

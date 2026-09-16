@@ -12,8 +12,9 @@ export const metadata: Metadata = {
 }
 
 export default function TeamPage() {
-  const partners = teamMembers.filter(m => m.is_partner)
-  const associates = teamMembers.filter(m => !m.is_partner)
+  const visibleMembers = teamMembers.filter(m => m.is_visible)
+  const partners = visibleMembers.filter(m => m.is_partner)
+  const associates = visibleMembers.filter(m => !m.is_partner)
 
   return (
     <>

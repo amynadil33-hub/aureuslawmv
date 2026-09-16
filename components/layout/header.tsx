@@ -61,13 +61,13 @@ export function Header() {
         <div className="container mx-auto px-6 py-2">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-6">
-              <a href="tel:+9603001000" className="flex items-center gap-2 text-stone-light/80 hover:text-gold transition-colors">
+              <a href="tel:+9607673636" className="flex items-center gap-2 text-stone-light/80 hover:text-gold transition-colors">
                 <Phone className="h-3.5 w-3.5" />
-                <span>+960 300 1000</span>
+                <span>+960 767 3636</span>
               </a>
-              <a href="mailto:contact@aureuslaw.mv" className="flex items-center gap-2 text-stone-light/80 hover:text-gold transition-colors">
+              <a href="mailto:hello@aureuslaw.mv" className="flex items-center gap-2 text-stone-light/80 hover:text-gold transition-colors">
                 <Mail className="h-3.5 w-3.5" />
-                <span>contact@aureuslaw.mv</span>
+                <span>hello@aureuslaw.mv</span>
               </a>
             </div>
             <div className="flex items-center gap-4">

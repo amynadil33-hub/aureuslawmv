@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Linkedin, Twitter } from 'lucide-react'
-import { contactInfo, practiceAreas } from '@/lib/demo-data'
+import { Phone, Mail, MapPin, Facebook, Instagram, MessageCircle } from 'lucide-react'
+import { contactInfo, practiceAreas, socialLinks } from '@/lib/demo-data'
 
 const footerLinks = {
   services: practiceAreas.slice(0, 6).map(p => ({
@@ -47,22 +47,31 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/company/aureuslaw"
+                href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-navy-light rounded-md hover:bg-gold hover:text-navy transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Aureus Law on Facebook"
               >
-                <Linkedin className="h-4 w-4" />
+                <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://twitter.com/aureuslaw"
+                href={socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-navy-light rounded-md hover:bg-gold hover:text-navy transition-colors"
-                aria-label="Twitter"
+                aria-label="Aureus Law on Instagram"
               >
-                <Twitter className="h-4 w-4" />
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href={socialLinks.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-navy-light rounded-md hover:bg-gold hover:text-navy transition-colors"
+                aria-label="Chat with Aureus Law on WhatsApp"
+              >
+                <MessageCircle className="h-4 w-4" />
               </a>
             </div>
           </div>

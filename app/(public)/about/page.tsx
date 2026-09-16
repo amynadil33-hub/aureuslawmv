@@ -72,7 +72,7 @@ const practiceAreas = [
 
 export default function AboutPage() {
   const partners = teamMembers.filter((member) =>
-    member.role_title?.toLowerCase().includes('partner'),
+    member.is_visible && member.role_title?.toLowerCase().includes('partner'),
   )
 
   return (

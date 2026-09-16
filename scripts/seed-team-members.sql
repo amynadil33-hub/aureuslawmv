@@ -140,7 +140,7 @@ Minha has further strengthened her practice through specialized training in juve
   '/images/team/placeholders/minha-abdul-muhsin-silhouette.png',
   FALSE,
   FALSE,
-  TRUE,
+  FALSE,
   4,
   NULL,
   '2025-12-08',

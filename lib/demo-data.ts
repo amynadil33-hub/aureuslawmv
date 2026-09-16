@@ -20,10 +20,16 @@ import type {
 } from './types'
 
 export const contactInfo: ContactInfo = {
-  phone: '+960 300 1000',
-  email: 'contact@aureuslaw.mv',
+  phone: '+960 767 3636',
+  email: 'hello@aureuslaw.mv',
   address: 'Aureus Law, 4th Floor, Champa Building, Boduthakurufaanu Magu, Malé, Maldives 20026',
   hours: 'Sunday - Thursday: 8:00 AM - 5:00 PM'
+}
+
+export const socialLinks = {
+  facebook: 'https://www.facebook.com/share/1Dh8eA4aR3/?mibextid=wwXIfr',
+  instagram: 'https://www.instagram.com/aureus.law.mv?stkn=MWx5ZGJwOWQ4bnV1cA==',
+  whatsapp: 'https://wa.me/9607673636',
 }
 
 // Firm Statistics
@@ -398,7 +404,7 @@ export const teamMembers: TeamMember[] = [
     photo_url: '/images/team/placeholders/minha-abdul-muhsin-silhouette.png',
     is_partner: false,
     is_featured: false,
-    is_visible: true,
+    is_visible: false,
     sort_order: 4,
     linkedin_url: null,
     created_at: '2025-12-08',
@@ -727,7 +733,7 @@ export const faqs: FAQ[] = [
   {
     id: '1',
     question: 'How do I schedule a consultation with Aureus Law?',
-    answer: 'You can schedule a consultation by filling out our online booking form, calling our office at +960 300 1000, or sending an email to contact@aureuslaw.mv. We typically respond within one business day and will arrange a time that suits your schedule.',
+    answer: 'You can schedule a consultation by filling out our online booking form, calling our office at +960 767 3636, or sending an email to hello@aureuslaw.mv. We typically respond within one business day and will arrange a time that suits your schedule.',
     category: 'General',
     practice_area_id: null,
     sort_order: 1,
