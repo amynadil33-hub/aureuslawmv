@@ -312,15 +312,17 @@ Across these roles, she has developed practical strengths in management support,
   'IT Professional',
   NULL,
   NULL,
-  'Moosa Riffath is an IT professional supporting Aureus Law Firm, assisting with technology-related operations, system support, network maintenance, and general IT support. He brings practical IT experience from legal, education, public sector, and corporate environments.
+  'Moosa Riffath is an IT professional supporting Aureus Law Firm, where he assists with technology-related operations, system support, user support, network maintenance, and general IT support. He brings practical experience from legal, education, public sector, and corporate environments, with exposure to servers, user systems, Microsoft administration, network devices, backup systems, access control, CCTV, and web-related technologies.
 
-His academic background includes a Bachelor of Information Technology in System Administration from Cyryx College and a Diploma in Information Technology from the same institution. He is currently pursuing an MSc in Information Technology at Villa College, Maldives, affiliated with the University of the West of England.
+His academic background includes a Master of Science in Information Technology from the University of the West of England, Bristol. The programme covered areas including Big Data, Cloud Computing, Social Media and Web Science, Digital Design and Development, Information Security, IT Project Management, Strategy and Governance in IT, and a Master''s Project. He also holds a Bachelor of Information Technology in System Administration and a Diploma in Information Technology from Cyryx College.
 
-Moosa''s experience includes his current role as ICT Manager at Road Development Corporation, as well as previous technical roles at the Ombudsperson''s Office for Transitional Justice, Criminal Court, and Majeediyya School. Across these roles, he has developed strengths in IT troubleshooting, network operations, server support, Microsoft administration, hardware and software support, and user-focused technical assistance.',
+Riffath''s IT experience includes his current role as ICT Manager at Road Development Corporation, as well as previous technical roles at the Ombudsperson''s Office for Transitional Justice, Criminal Court, and Majeediyya School. Across these roles, he has developed practical strengths in IT troubleshooting, network operations, server support, Microsoft user and mail management, hardware and software support, infrastructure administration, and user-focused technical assistance.
+
+At Aureus Law Firm, Moosa brings a reliable, disciplined, and continuous-improvement-oriented approach to supporting the firm''s IT needs. His contribution supports smooth digital operations, dependable technology assistance, secure and efficient IT systems, and the ongoing development of the firm''s technology environment.',
   ARRAY[
     'Bachelor of Information Technology (System Administration), Cyryx College',
     'Diploma in Information Technology, Cyryx College',
-    'MSc in Information Technology (in progress), Villa College / University of the West of England'
+    'Master of Science in Information Technology, University of the West of England, Bristol'
   ],
   NULL,
   ARRAY['Dhivehi', 'English'],
@@ -363,6 +365,40 @@ His experience includes supporting legislative and regulatory procedures, ratifi
   NULL,
   '2025-12-08',
   '2025-12-08'
+),
+
+-- 12. Mariyam Nashath — Paralegal
+(
+  gen_random_uuid(),
+  NULL,
+  'Mariyam Nashath',
+  'mariyam-nashath',
+  'Paralegal',
+  NULL,
+  NULL,
+  'Mariyam Nashath is a Paralegal at Aureus Law Firm and a final year Shari''ah and Law (Honours) student at the Maldives National University. She has developed experience in legal research, drafting, corporate governance, regulatory compliance, and commercial legal practice through her academic and professional work.
+
+Prior to joining Aureus Law Firm, Nashath worked as a Paralegal at Business Center Corporation, where she assisted with the drafting and review of commercial agreements, sponsorship agreements, payment agreements, and internal policies. She also supported legal compliance and corporate governance matters, including work relating to company registration and regulatory requirements.
+
+Nashath previously interned at the Ombudsperson''s Office for Transitional Justice, where she assisted with legal research, mediation processes, statement taking, report drafting, and the review of legal documentation relating to complaints and investigations. Through this role, she developed strong research, analytical, and case assessment skills while gaining exposure to human rights and transitional justice issues. Her academic and legislative research experience includes work relating to the Company Act, Intellectual Property Office Act, and Trademark legislation.
+
+Nashath has actively participated in international moot court competitions, representing the Maldives National University at the Willem C. Vis (East) International Commercial Arbitration Moot and related pre-moot competitions. Her team was awarded Third Place for Best Memorandum for Respondent. She later coached the Maldives National University team for the Foreign Direct Investment International Arbitration Moot, further developing her advocacy, research, and mentoring skills.
+
+At Aureus Law Firm, Nashath supports the firm''s legal practice through legal research, drafting, document review, and client-related legal work. She is committed to delivering high-quality legal support with professionalism, diligence, and attention to detail while continuing to develop her expertise in corporate, commercial, and public law.',
+  ARRAY[
+    'Final year Shari''ah and Law (Honours), Maldives National University'
+  ],
+  NULL,
+  NULL,
+  NULL,
+  '/images/team/corporate-corrected/mariyam-nashath.jpg',
+  FALSE,
+  FALSE,
+  TRUE,
+  12,
+  NULL,
+  '2026-09-16',
+  '2026-09-16'
 );
 
 -- Confirm
