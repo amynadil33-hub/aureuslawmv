@@ -29,7 +29,7 @@ const mainNavItems = [
       description: s.short_description
     }))
   },
-  { label: 'Team', href: '/team' },
+  { label: 'People', href: '/team' },
   { label: 'Insights', href: '/insights' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
@@ -58,7 +58,7 @@ export function Header() {
     <>
       {/* Top Bar */}
       <div className="hidden lg:block bg-navy text-navy-light">
-        <div className="container mx-auto px-6 py-2">
+        <div className="mx-auto w-full max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-6">
               <a href="tel:+9607673636" className="flex items-center gap-2 text-stone-light/80 hover:text-gold transition-colors">
@@ -86,7 +86,7 @@ export function Header() {
           isScrolled ? 'bg-card/95 backdrop-blur-md shadow-sm' : 'bg-card'
         )}
       >
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
@@ -193,7 +193,7 @@ export function Header() {
               transition={{ duration: 0.3 }}
               className="lg:hidden bg-card border-t border-border overflow-hidden"
             >
-              <div className="container mx-auto px-6 py-4">
+              <div className="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
                 <nav className="flex flex-col gap-1">
                   {mainNavItems.map((item) => (
                     <div key={item.label}>

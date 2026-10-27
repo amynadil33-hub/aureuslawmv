@@ -14,8 +14,8 @@ export function TeamSection() {
     <Section>
       <Container>
         <SectionHeader
-          subtitle="Our Team"
-          title="Meet Our Legal Experts"
+          subtitle="Our People"
+          title="Meet Our People"
           description="Our team combines decades of experience with fresh perspectives, delivering exceptional results for every client."
         />
 
@@ -97,7 +97,7 @@ export function TeamSection() {
             href="/team"
             className="inline-flex items-center gap-2 text-gold hover:text-gold-dark font-medium transition-colors"
           >
-            Meet the Full Team
+            Meet Our People
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

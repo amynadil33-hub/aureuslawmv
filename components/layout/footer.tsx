@@ -7,9 +7,9 @@ const footerLinks = {
     label: p.name,
     href: `/services/${p.slug}`
   })),
-  company: [
+  firm: [
     { label: 'About Us', href: '/about' },
-    { label: 'Our Team', href: '/team' },
+    { label: 'People', href: '/team' },
     { label: 'Careers', href: '/careers' },
     { label: 'Insights', href: '/insights' },
     { label: 'Contact', href: '/contact' },
@@ -28,7 +28,7 @@ export function Footer() {
   return (
     <footer className="bg-navy text-stone-light">
       {/* Main Footer */}
-      <div className="container mx-auto px-6 py-16">
+      <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
@@ -101,11 +101,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* The Firm */}
           <div>
-            <h3 className="font-serif text-lg font-medium mb-6 text-stone-light">Company</h3>
+            <h3 className="font-serif text-lg font-medium mb-6 text-stone-light">The Firm</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
+              {footerLinks.firm.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -154,7 +154,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-navy-light">
-        <div className="container mx-auto px-6 py-6">
+        <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-stone-light/60">
               © {currentYear} Aureus Law. All rights reserved.

@@ -39,7 +39,7 @@ export default function InsightsPage() {
     <main>
       {/* Hero */}
       <section className="relative bg-navy text-stone-light py-20 lg:py-28">
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function InsightsPage() {
 
       {/* Search & Filter */}
       <Section className="pb-0">
-        <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-center justify-between">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
           <div className="relative w-full lg:w-96">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
@@ -98,7 +98,7 @@ export default function InsightsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid lg:grid-cols-2 gap-8 bg-card rounded-xl border border-border overflow-hidden"
+            className="mx-auto grid w-full max-w-7xl gap-8 overflow-hidden rounded-xl border border-border bg-card px-4 sm:px-6 lg:grid-cols-2 lg:px-8"
           >
             <div className="relative aspect-[4/3] lg:aspect-auto bg-stone">
               {featuredPost.featured_image ? (
@@ -152,7 +152,7 @@ export default function InsightsPage() {
       {/* Posts Grid */}
       <Section className="pt-8">
         {remainingPosts.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
             {remainingPosts.map((post, idx) => {
               const author = teamMembers.find(m => m.id === post.author_id)
               return (

@@ -39,7 +39,7 @@ export default function CareersPage() {
     <main>
       {/* Hero */}
       <section className="relative bg-navy text-stone-light py-20 lg:py-32">
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function CareersPage() {
             className="max-w-3xl"
           >
             <p className="text-gold text-sm font-medium tracking-wider uppercase mb-4">
-              Join Our Team
+              Join Our Firm
             </p>
             <h1 className="font-serif text-4xl lg:text-5xl xl:text-6xl font-semibold mb-6 text-balance">
               Build Your Legal Career with Aureus Law
@@ -67,7 +67,7 @@ export default function CareersPage() {
           subtitle="We invest in our people and foster a culture of excellence"
           centered
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="mx-auto mt-12 grid w-full max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
           {benefits.map((benefit, idx) => (
             <motion.div
               key={benefit.title}

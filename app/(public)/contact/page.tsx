@@ -29,7 +29,7 @@ export default function ContactPage() {
     <main>
       {/* Hero */}
       <section className="relative bg-navy text-stone-light py-20 lg:py-28">
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
       {/* Contact Info Cards */}
       <section className="bg-gold py-12">
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -127,7 +127,7 @@ export default function ContactPage() {
 
       {/* Contact Form & Map */}
       <Section>
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="mx-auto grid w-full max-w-7xl gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           {/* Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

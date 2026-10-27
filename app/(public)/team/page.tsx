@@ -7,7 +7,7 @@ import { teamMembers } from '@/lib/demo-data'
 import { shortBios } from '@/lib/team-bios'
 
 export const metadata: Metadata = {
-  title: 'Our Team | Aureus Law',
+  title: 'Our People | Aureus Law',
   description: 'Meet the experienced legal professionals at Aureus Law who are dedicated to providing exceptional service to our clients.',
 }
 
@@ -26,10 +26,10 @@ export default function TeamPage() {
         <Container className="relative z-10">
           <div className="max-w-3xl">
             <p className="text-gold text-sm font-medium tracking-wider uppercase mb-4">
-              Our Team
+              Our People
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-stone-light tracking-tight">
-              Meet Our Legal Experts
+              Meet Our People
             </h1>
             <p className="mt-6 text-xl text-stone-light/80 leading-relaxed">
               Our team combines decades of experience with fresh perspectives, 
@@ -186,7 +186,7 @@ export default function TeamPage() {
       <Section>
         <Container size="narrow" className="text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-medium text-navy">
-            Join Our Team
+            Join Our Firm
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             We&apos;re always looking for talented legal professionals to join our growing practice.

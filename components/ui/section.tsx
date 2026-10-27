@@ -86,7 +86,7 @@ export function Container({ children, className, size = 'default' }: ContainerPr
   return (
     <div
       className={cn(
-        'container mx-auto px-6',
+        'mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8',
         size === 'narrow' && 'max-w-4xl',
         size === 'wide' && 'max-w-7xl',
         className

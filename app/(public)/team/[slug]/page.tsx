@@ -28,13 +28,13 @@ export default function TeamMemberPage() {
     <main>
       {/* Hero Section */}
       <section className="relative bg-navy text-stone-light py-16 lg:py-24">
-        <div className="container mx-auto px-6">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <Link 
             href="/team"
             className="inline-flex items-center gap-2 text-stone-light/70 hover:text-gold transition-colors mb-8"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Team
+            Back to People
           </Link>
           
           <div className="grid lg:grid-cols-3 gap-12 items-start">
@@ -137,7 +137,7 @@ export default function TeamMemberPage() {
 
       {/* About and facts */}
       <Section>
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+        <div className="mx-auto grid w-full max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

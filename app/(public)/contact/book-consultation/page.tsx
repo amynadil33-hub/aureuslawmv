@@ -68,7 +68,7 @@ export default function BookConsultationPage() {
 
   return (
     <main className="min-h-screen bg-stone py-16 lg:py-24">
-      <div className="container mx-auto max-w-3xl px-6">
+      <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
         <Link href="/contact" className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold"><ArrowLeft className="h-4 w-4" />Back to Contact</Link>
         {submitted ? (
           <Card><CardContent className="p-10 text-center"><CheckCircle2 className="mx-auto h-14 w-14 text-gold" /><h1 className="mt-5 font-serif text-3xl font-semibold text-navy">Request Received</h1><p className="mx-auto mt-3 max-w-xl text-muted-foreground">Thank you. Your consultation request has been sent to Aureus Law Firm LLP. Our team will contact you to confirm the appointment.</p><Button asChild className="mt-8 bg-gold text-card hover:bg-gold-dark"><Link href="/">Return Home</Link></Button></CardContent></Card>

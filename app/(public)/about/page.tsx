@@ -82,7 +82,7 @@ export default function AboutPage() {
           <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full border border-gold" />
           <div className="absolute right-20 top-20 h-64 w-64 rounded-full border border-gold" />
         </div>
-        <div className="container relative z-10 mx-auto px-6">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       <Section>
-        <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+        <div className="mx-auto grid w-full max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:px-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -163,7 +163,7 @@ export default function AboutPage() {
           subtitle="The principles at the foundation of our practice"
           align="center"
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mx-auto mt-12 grid w-full max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
           {values.map((value, index) => {
             const Icon = value.icon
             return (
@@ -192,7 +192,7 @@ export default function AboutPage() {
           subtitle="Practical advice and dependable representation for individuals, businesses, and institutions"
           align="center"
         />
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mx-auto mt-12 grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           {practiceAreas.map((area, index) => {
             const Icon = area.icon
             return (
@@ -245,7 +245,7 @@ export default function AboutPage() {
             align="center"
             variant="light"
           />
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto mt-12 grid w-full max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner.id}
@@ -288,7 +288,7 @@ export default function AboutPage() {
               variant="outline"
               className="border-stone-light/30 text-stone-light hover:bg-stone-light hover:text-navy"
             >
-              <Link href="/team">View Full Team</Link>
+              <Link href="/team">View Our People</Link>
             </Button>
           </div>
         </Section>
