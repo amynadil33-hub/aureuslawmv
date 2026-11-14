@@ -49,7 +49,7 @@ export function CTASection() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-stone-light/30 text-stone-light hover:bg-stone-light/10"
+                  className="border-stone-light bg-stone-light text-navy hover:border-gold hover:bg-gold hover:text-navy"
                 >
                   <Link href="/contact">Contact Us</Link>
                 </Button>
