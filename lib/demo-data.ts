@@ -631,6 +631,138 @@ export const articleCategories: ArticleCategory[] = [
 export const articles: Article[] = [
   {
     id: '1',
+    title: 'Understanding the Credibility, Tendency and Coincidence Rules under the Maldives Evidence Act',
+    slug: 'credibility-tendency-coincidence-rules-maldives-evidence-act',
+    excerpt: 'A practical overview of three important exclusionary rules governing the admissibility of evidence under the Maldives Evidence Act.',
+    content: `<p>The Evidence Act (Law No. 11/2022) introduced a rules-based framework for determining whether evidence may be admitted in legal proceedings in the Maldives. Within that framework, credibility, tendency and coincidence rules operate as exclusionary rules: they generally prevent certain evidence from being used unless the Act's requirements or an applicable exception is satisfied.</p>
+<p>These rules serve an important purpose. Relevant evidence can still be unfair, distracting or unduly prejudicial. By controlling how particular kinds of evidence are introduced, the rules help courts focus on reliable material and reduce the risk of decisions being influenced by improper reasoning.</p>
+<h2>The Credibility Rule</h2>
+<p lang="dv">(އިތުބާރުގެ އުސޫލު)</p>
+<p>The credibility rule is concerned with whether a witness is reliable and should be believed. As a general principle, it excludes evidence that is relevant only to a witness's credibility rather than to a fact in issue in the case.</p>
+<p>This restriction is intended to prevent proceedings from being diverted into collateral disputes about a witness's character or past conduct. Such disputes may consume time without materially assisting the court in deciding the central issues.</p>
+<p>However, the rule is not absolute. Evidence that challenges or supports a witness's credibility may be admissible in circumstances recognized by the Act, including during cross-examination or where the evidence has substantial probative value in assessing whether the witness should be believed.</p>
+<h2>The Tendency Rule</h2>
+<p lang="dv">(އިޙްތިމާލުގެ އުސޫލު)</p>
+<p>The tendency rule applies to evidence about a person's character, reputation or conduct when it is used to argue that the person has a tendency to act in a particular way or to possess a particular state of mind.</p>
+<p>Its purpose is to guard against propensity reasoning, for example, the assumption that because a person acted improperly in the past, they are more likely to have committed the act currently alleged. That form of reasoning can be highly prejudicial if the earlier conduct has limited value in proving the present case.</p>
+<p>Under the framework described in the Act, tendency evidence may be admitted where reasonable notice has been given to the other party, and the court is satisfied that the evidence has significant probative value.</p>
+<h2>The Coincidence Rule</h2>
+<p lang="dv">(ނާދިރުވުމުގެ އުސޫލު)</p>
+<p>The coincidence rule concerns evidence of two or more events that are said to be related. It restricts the use of those events to prove that a person did a particular act or had a particular state of mind on the basis that the similarities are unlikely to be coincidental.</p>
+<p>Like the tendency rule, the coincidence rule protects against unfair reliance on “similar fact” evidence. Multiple events should not be treated as proof merely because they share common features; the similarities must be sufficiently meaningful to give the evidence significant probative value.</p>
+<p>Coincidence evidence may be admitted where reasonable notice has been provided, and the court determines that the evidence has significant probative value.</p>
+<h2>How the Three Rules Differ</h2>
+<table><thead><tr><th>Rule</th><th>Primary focus</th><th>Question the court considers</th></tr></thead><tbody><tr><td>Credibility</td><td>The reliability of a witness</td><td>Does the evidence properly assist in deciding whether the witness should be believed?</td></tr><tr><td>Tendency</td><td>A person's character, conduct or state of mind</td><td>Does the evidence have significant probative value in establishing a relevant tendency?</td></tr><tr><td>Coincidence</td><td>The relationship between multiple events</td><td>Are the similarities sufficiently significant to make coincidence improbable?</td></tr></tbody></table>
+<h2>Why These Rules Matter in Practice</h2>
+<p>The tendency and coincidence rules are closely related and are often associated with what older common-law authorities describe as similar fact evidence. The credibility rule is distinct: it focuses on the weight that may properly be given to a particular witness's testimony.</p>
+<p>In each context, admissibility depends on the purpose for which the evidence is offered, the strength of its connection to the issues in dispute, compliance with procedural requirements and the court's assessment under the Act. Parties should therefore identify potential credibility, tendency or coincidence evidence early and consider notice requirements before trial.</p>
+<h2>Conclusion</h2>
+<p>The credibility, tendency and coincidence rules reflect a central objective of the Evidence Act: evidence must be assessed not only for relevance, but also for reliability, fairness and the risk of undue prejudice. Understanding the distinction between the rules is essential when preparing evidence, conducting cross-examinations and responding to material introduced by another party.</p>
+<p><em>This article is provided for general information only and does not constitute legal advice. The application of the Evidence Act depends on the facts and circumstances of each matter. Specific legal advice should be obtained where required.</em></p>`,
+    cover_image_url: null,
+    category_id: '1',
+    author_id: '2',
+    status: 'published',
+    is_featured: true,
+    read_time_minutes: 6,
+    tags: ['evidence law', 'litigation', 'admissibility'],
+    attachment_url: null,
+    meta_title: 'Credibility, Tendency and Coincidence Rules | Aureus Law',
+    meta_description: 'A practical overview of the credibility, tendency and coincidence rules under the Maldives Evidence Act.',
+    published_at: '2026-11-23',
+    created_at: '2026-11-23',
+    updated_at: '2026-11-23',
+    category: articleCategories[0],
+    author: teamMembers[1]
+  },
+  {
+    id: '2',
+    title: 'Treasure Biz International Pvt Ltd v State (Ministry of Fisheries and Agriculture)',
+    slug: 'treasure-biz-international-v-state-conditional-acceptance',
+    excerpt: 'A case analysis of conditional acceptance and contract formation in the Supreme Court decision [2019/SC-A/81].',
+    content: `<p><strong>Case No. [2019/SC-A/81]</strong></p>
+<p><strong>Topic: Conditional Acceptance and Formation of Contract</strong></p>
+<h2>Facts</h2>
+<p>Gurab Investment Maldives Pvt Ltd (Company Registration No. C-03/1994) was originally owned by Fuad Zahir of GA. Kolamaafushi, Mariyamage. On 24 June 2015, the Ministry of Fisheries and Agriculture issued a promotional letter stating that the island R. Thaavatha would be leased for 21 years to the successful bidder for purposes including fisheries research, fuel supply to vessels, ice production for fishermen, mineral water production, and related economic activities.</p>
+<p>Subsequently, on 27 August 2015, the Ministry issued an Award Letter to Gurab Investment Maldives Pvt Ltd, confirming the decision to lease the island. The Award Letter expressly required that a security deposit of MVR 100,000 be paid to the Maldives Inland Revenue Authority (MIRA) within seven days of receipt. The letter further stated that failure to pay within this period would result in automatic termination of the award.</p>
+<p>On the same date, ownership of Gurab Investment Maldives Pvt Ltd was transferred to Treasure Biz International Pvt Ltd. However, this change of ownership was not immediately notified to the Ministry.</p>
+<p>When Treasure Biz International Pvt Ltd attempted to pay the security deposit to MIRA within the stipulated period, MIRA refused to accept the payment, stating that the Ministry had not instructed it to accept payment from Treasure Biz International and that the award remained in the name of Fuad Zahir / Gurab Investment Maldives. On 31 August 2015, Gurab Investment Maldives wrote to the Ministry seeking clarification on how the seven-day period should be calculated.</p>
+<p>As the security deposit was not received within the required time, the Ministry terminated the Award Letter. Treasure Biz International then filed a case in the Civil Court, seeking an order compelling the Ministry to accept the deposit and to execute the lease agreement.</p>
+<h2>Issues</h2>
+<ul><li>Whether a legally binding agreement was formed between the Ministry and Gurab Investment Maldives / Treasure Biz International.</li><li>Whether the Award Letter constituted unconditional acceptance or merely conditional acceptance.</li><li>Whether the Ministry could lawfully terminate the award due to non-payment of the security deposit within seven days.</li></ul>
+<h2>Civil Court Judgment</h2>
+<p>The Civil Court held that a binding agreement had been formed between the parties and that the Ministry's termination of the Award Letter was contrary to law and procedure.</p>
+<p>The Court ordered the Ministry to arrange payment of the security deposit within seven days from 29 March 2016 and to sign the written lease agreement within 15 days of payment with Gurab Investment Maldives / Treasure Biz International.</p>
+<p>The Civil Court reasoned that Gurab Investment Maldives had accepted the Award Letter, that the failure to pay the deposit resulted from the Ministry's failure to notify MIRA, and that evidence from MIRA showed the claimant had acted in accordance with applicable rules and procedures.</p>
+<h2>High Court Judgment</h2>
+<p>On appeal by the Ministry, the High Court reversed the Civil Court decision in Case No. 2016/HC-A/295 and set aside Case No. 2320/Cv-C/2015.</p>
+<p>The High Court held that no agreement had been formed. The Award Letter expressly stated that it would be void if the deposit was not paid within seven days, and the deposit was never accepted by MIRA on a legally valid basis. Although Article 4 of the Contract Act (Law No. 04/91) provides that agreements need not be in a specific form unless required by law, Article 14 of the Uninhabited Island Act (Law No. 20/98) requires a formal agreement signed by both parties for the lease of an uninhabited island. No such agreement was signed.</p>
+<p>The Ministry also had not been informed in time of the transfer of ownership from Fuad Zahir to Treasure Biz International. The High Court therefore concluded that the conditions attached to the award were not fulfilled and no binding contract came into existence.</p>
+<h2>Supreme Court Judgment</h2>
+<p>Treasure Biz International appealed, arguing that the failure to accept payment was caused by the Ministry's negligence and that the High Court erred in finding that no agreement existed. The Supreme Court dismissed the appeal and affirmed the High Court's decision.</p>
+<p>Under Article 8(b) of the Contract Act, an acceptance must be absolute and unconditional. Acceptance subject to conditions amounts to a counteroffer rather than valid acceptance. The Ministry's Award Letter was a conditional acceptance because it required payment of the security deposit within seven days. Since the condition was not fulfilled, acceptance was incomplete and no agreement came into force.</p>
+<p>The Supreme Court also found that MIRA lawfully refused payment because the award was issued to Gurab Investment Maldives while it was owned by Fuad Zahir, and the Ministry was not informed within the stipulated time about the transfer of ownership to Treasure Biz International. The failure to form a contract was therefore attributable to the claimant's failure to fulfil the conditions and provide timely notice.</p>
+<h2>Conclusion</h2>
+<p>The Supreme Court held that no contract was formed because acceptance was conditional and the conditions were not fulfilled. Consequently, the Ministry lawfully terminated the Award Letter, and Treasure Biz International was not entitled to enforcement of the lease.</p>`,
+    cover_image_url: null,
+    category_id: '1',
+    author_id: '12',
+    status: 'published',
+    is_featured: false,
+    read_time_minutes: 8,
+    tags: ['contract law', 'case analysis', 'conditional acceptance'],
+    attachment_url: null,
+    meta_title: 'Treasure Biz International v State | Aureus Law',
+    meta_description: 'Case analysis of conditional acceptance and contract formation in Treasure Biz International Pvt Ltd v State.',
+    published_at: '2026-11-23',
+    created_at: '2026-11-23',
+    updated_at: '2026-11-23',
+    category: articleCategories[0],
+    author: teamMembers[11]
+  },
+  {
+    id: '3',
+    title: 'ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ސާފްކުރުން',
+    slug: 'juvenile-record-clearance-maldives',
+    excerpt: 'An analysis of juvenile record clearance, confidentiality and expungement in the Maldives.',
+    content: `<div lang="dv" dir="rtl">
+<h2>ތަޢާރަފް</h2>
+<p>ކުށުގެ ރެކޯޑް ސާފްކުރުމުގައި ބޮޑެތި މީހުންނާއި ކުޑަކުދިންގެ ތަފާތުތަކެއް ދުނިޔޭގެ ހުރިހާ ޢަދުލުގެ ނިޒާމުގައި ހިމެނިފައިވެއެވެ. މި ތަފާތުތައް ހުރިކަމުގައިވިޔަސް، ބޮޑެތި މީހުންގެ ކުށުގެ ރެކޯޑް ސާފުކޮށްދިނުމުގެ ސަބަބުން ދިމާވާ މައްސަލަތަކާ ގުޅޭ ގޮތުން އެކި ފޯރަމްތަކުގަޔާއި، އެކި ލެވެލްތަކުގައި ޤާނޫނީ ޢިލްމުގެ ބޭފުޅުންނާއި، ސިޔާސީ ބޭފުޅުން، އަދި ޤާނޫނުހަދާ މަޖިލިސްގެ މެމްބަރުންނާއި، ޢަދުލުގެ ނިޒާމުގައި މަސައްކަތްކުރައްވާ ފަރާތްތަކުން ބަހުސްކުރައްވާފައިވެއެވެ. މި ބަހުސްތަކުގެ ތެރެއިންވެސް ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ސާފުކޮށްދިނުމުގެ ސަބަބުން ނުކުމެދާނެ، ނޭދެވޭ ނަތީޖާއާމެދު އަޅާލެވިފައިވާ މިންވަރު ކުޑައެވެ. ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑަކީ ވަކި ހިފެހެއްޓުންތަކެއް ބެހެއްޓުމާއެކީ ވަކި ޚާއްސަ ބަޔަކަށް ފެންނަންޖެހޭ ރެކޯޑްތަކަށްވުން ލާޒިމްއެވެ. އެހެން ނަމަވެސް ދައުލަތުން މި ސިއްރު ހިފެހެއްޓުމުގައި ގެންގުޅޭ އުސޫލުތަކަކީ ޒަމާނާ އެންމެ އެކަށޭނެ އުސޫލުތަކަށްނުވެ ހިނގައިދާނެއެވެ. ކުޑަކުދިންގެ ރެކޯޑްތައް ޢާންމު މުވައްޒަފުންނަށް ފެނުމަކީ މިހާރުގެ ނިޒާމުގައި ވަރަށް ޢާއްމު ކަމެއްކަން ފާހަގަކުރެވެއެވެ.</p>
+<p>ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ހާމަނުކުރުމުގެ އެންމެ ބޮޑު އެއް ބޭނުމަކީ ކުއްޖާ މުޖުތަމަޢުއަށް އަނބުރާ އައުމަށްޓަކައި އެކުއްޖާއަށް ލިބޭ ރިހެބިލިޓޭޝަން ފުރުޞަތުގައި ކުއްޖާގެ އުޅުން އިސްލާޙްކޮށް އައިސްފިނަމަ، އެކުއްޖާއަކީ މުޖުތަމަޢުގެ އެހެންވެސް ކުށްނުކުރާ ފަރުދެއް ގޮތުގައި ބަލައިގަތުމެވެ. އަދި އޭނާ އަނބުރާ މުޖުތަމަޢުއަށް އައުމަށްކުރި މަސައްކަތްތަކަށް ތަރުހީބުދީ، އޭނާގެ ހަޔާތުގައި ބާކީހުރި ދުވަސްތަކުގައި ކުށްނުކުރާ މީހެއްގެ އިޙްޞާޞްކޮށްދީ މުޖުތަމަޢުން ފުރިހަމައަށް ބަލައިގަތްކަން ފާހަގަކުރުމެވެ. ކުޑަކުދިންގެ ޢަދުލުގެ ނިޒާމުގެ ބޭނުމަކީވެސް އަދި އެންމެ މުހިންމު މަޤްޞަދަކީވެސް ކުއްޖާ އަނބުރާ މުޖުތަމަޢުއަށް އައިސް މުޖުތަމަޢުގައި ބިނާކުރަނިވި ދައުރެއް އަދާކުރުމަށް މަގުފަހިކޮށްދިނުމެވެ. ކުޑަކުދިންނަށް ކުރެވޭ ކުށްތަކަށް ޢަދަބުދިނުމަކީ ކުޑަކުދިން ޢަދުލުގެ ނިޒާމު ތަރުހީބުދޭ ނުވަތަ އެއްބާރުލުންދޭ ނަޒަރިއްޔާއެއްނޫނެވެ.</p>
+<h2>ކޯޓުން ނިންމާ މައްސަލަތަކުގެ ކުށުގެ ރެކޯޑް ސާފްކުރުން</h2>
+<p>ޖިނާއީ އިޖުރާއަތު ޤާނޫނުގެ 159 ވަނަ މާއްދާގައި ބަޔާންކުރާ ގޮތުން މަރުކަޒީކޮށް ކުށުގެ ރެކޯޑް ބެލެހެއްޓުމުގެ ޒިންމާއަކީ ޑިޕާޓްމަންޓް އޮފް ޖުޑީޝަލް އެޑްމިނިސްޓްރޭޝަންގެ ޒިންމާއެކެވެ. އެމާއްދާގައި ބަޔާންކުރާ ގޮތުގައި ކޯޓުގައި ހިނގަމުންދާ މައްސަލައެއް ޙުކުމްކުރުމަށްފަހު 159 (ނ) ގައި ފާހަގަކޮށްފައިވާ މަޢުލޫމާތުތަކާއެކީ ކޯޓުން ޑިޕާޓްމަންޓް އޮފް ޖުޑީޝަލް އެޑްމިނިސްޓްރޭޝަންއަށް ލިޔެކިޔުންތައް ފޮނުވަން ޖެހެއެވެ.</p>
+<p>ޖިނާއީ އިޖުރާއަތުގެ 160 ވަނަ މާއްދާގެ (ނ) ގައި ބަޔާންކޮށްފައިވަނީ ކުށުގެ ރެކޯޑް ސާފުކުރެވޭ ފަރާތަކީ އުމުރުން 18(އަށާރ) އަހަރުނުވާ ކުއްޖަކުނަމަ ނުވަތަ އަމިއްލަ ދިރިއުޅުމުގައި ޒިންމާ ނެގުމުގެ އިޙްތިޔާރު ލިބިފައިނުވާ މީހަކުނަމަ، ރެކޯޑް ސާފްކުރުމަށް އެދޭނީ، އެކުއްޖެއްގެ ނުވަތަ އެމީހެއްގެ މަންމަ ނުވަތަ ބައްޕަ ނުވަތަ ޒިންމާދާރު ބަލަދުވެރިއަކު ނުވަތަ އެނޫންވެސް އެފަދަ ކުއްޖަކު ނުވަތަ މީހަކު ބެލެހެއްޓުމާއި ޙަވާލުވެހުރި ފަރާތަކުންކަމަށެވެ. ނަމަވެސް އުފެދޭ ސުވާލަކީ ކުޑަކުއްޖެއްގެ ކުށުގެ ރެކޯޑް ސާފުކުރުމަށްޓަކައި ސަރުކާރު މުއައްސަސާއަކަށް، ނުވަތަ ޕްރައިވެޓް މުއައްސަސާއަކަށް އެދުމުގެ ފުރުޞަތު އޮންނާނެތޯއެވެ. އަދި އެކަމަށް ފުރުޞަތު އެބައޮތްތޯއެވެ. ނުވަތަ އެފުރުޞަތު އޮތްނަމަ އެ ފުރުޞަތު އޮތީ ކީއްވެގެންތޯއެވެ.</p>
+<p>ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑަކީ 3 ވަނަ ފަރާތަކަށް ހާމަކުރާ މަޢުލޫމާތަކަށްނުވާ ހިނދު އެފަދަ މަޢުލޫމާތެއް ހޯދުމަށް އެހެން ފަރާތްތަކަށް ފުރުޞަތު ދިނުން، ނުވަތަ އެފަދަ ފުރުޞަތެއް ނިޒާމުގެ ތެރެއިން ޤާއިމްވެފައި ހުރުން އެއީ ބަލައިގަނެވޭނެ ފަދަކަމެއް ނޫނެވެ. ދިވެހިރާއްޖެ ބައިވެރިވެފައިވާ މުއާހަދާތަކާއި، އަދި ދުނިޔޭގެ ބެސްޓް ޕްރެކްޓިސްގައިވެސް ކުށްކުރާ ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ސާފުކުރުމުގެ ފުރުޞަތު ލިބިފައި އޮތީ ވަކި ދައުލަތުގެ މުއައްސަސާތަކަކަށެވެ. އަދި އެފުރުޞަތަކީ ވިހާވެސް ހަނިކޮށް ލިބިފައި އޮންނަ ފުރުޞަތެކެވެ.</p>
+<p>ޤާނޫނު ނަންބަރު:2019/18 (ކުޑަކުދިންގެ ޢަދުލުގެ ޤާނޫނު) ގެ 112 ވަނަ މާއްދާގައި ބަޔާންކޮށްފައިވާ ގޮތުން ކުއްޖާގެ ރެކޯޑްތައް ބަހައްޓަންވާނީ ސިއްރު ގޮތުގައި އަދި ތިންވަނަ ފަރާތަކަށް ނުލިބޭ ގޮތަށް، އަދި އެފަދަ ރެކޯޑުތަކަށް ވާޞިލުވެވޭނީ ކޯޓު އަމުރަކުން ހުއްދަ ލިބިގެން، ކުއްޖާގެ މައްސަލަބަލާ ފަރާތަށާއި ކަނޑައެޅިގެން އެކަމަށް ހުއްދަކުރެވޭ އެހެން ފަރާތްތަކަށްކަމަށެވެ.</p>
+<p>އެހެންކަމުން ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑްތަކަށް ވާޞިލްވުމުގެ މަގު ކުޑަކުދިންގެ ޢަދުލުގެ ޤާނޫނުން ހަނިކޮށްފައިވާކަން ފާހަގަކުރެވެއެވެ.</p>
+<h2>ކުށްކުރާ ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ސާފްކުރުން ހުއްޓުވަންވީ ސަބަބުތައް</h2>
+<p>ޖިނާއީ ޢަދުލުގެ ޢާންމު ނިޒާމުން ބޭރުން ކުށްކުރާ ކުޑަކުދިންގެ މައްސަލަތައް ބެލުމަށް ޚާއްސަ ނިޒާމެއް އޮންނަންވާނެކަމަށް ޤާނޫނު ނަންބަރު 2014/9 (ދިވެހިރާއްޖޭގެ ޤާނޫނުލްޢުޤޫބާތު) ގެ 53 ވަނަ މާއްދާގެ (ރ) ގައި ބަޔާންކޮށްފައިވެއެވެ. ކުޑަކުދިންގެ މައްސަލަ ބެލުމުގެ އިޙްތިޞާޞް ޖުވެނައިލް ކޯޓަށް ލިބިގެންވާއިރު ކޯޓުގައި ހިނގާ މައްސަލަތައް ދާނެގޮތުގެ މިސާލަކަށް ބައްލަވާލައްވަމާތޯއެވެ. މިސާލު: މަރިޔަމް، ފިހާރައަކުން އެއްޗެއް ވަގަށް ނެގުމުގެ ސަބަބުން އޭނާގެ މައްޗަށް ވައްކަމުގެ ދަޢުވާއެއްކުރެވުނު. އެ މައްސަލައަކީ ކުޑަ ވައްކަމުގެ މައްސަލައަކަށްވާތީވެ، އަދި އޭނާއަށް ކުށެއްކުރެވުނު ފުރަތަމަ ފަހަރުކަމަށްވާތީ، ކޯޓުން އޭނާއަށް 6 މަސްދުވަހުގެ ޕްރޮބޭޝަންއަކަށް ދިއުމުގެ ފުރުޞަތު ދިން. ޕްރޮބޭޝަންގެ ދަށުން، މުޖުތަމަޢުއަށް ޚިދުމަތްކުރަން 20 ގަޑިއިރު ކަނޑައެޅުމާއި، ވަގަށް އެއްޗެހި ނެގި ފިހާރައަށް 6 މަސްދުވަސްވަންދެން ނުވަނުމަށްވެސް ޝަރުޠުކުރެވިފައިވޭ. މަރިޔަމްގެ މައްޗަށް ކަނޑައެޅި ޕްރޮބޭޝަންގެ ހުރިހާކަމެއް އޭނާ ފުރިހަމަކޮށްފައިވާތީ، އޭނާގެ މައްޗަށް ހުށަހެޅިފައިވާ މައްސަލައިގައި އެހެން އެއްވެސް އަދަބެއް ދިނުމުގެ ބަދަލުގައ އޭނާ މުޖުތަމަޢުއަށް އަނބުރާ ރުޖޫޢަވެވޭނެ ގޮތަށް ނިންމާ ޖުވެނައިލް ކޯޓުން މައްސަލަ ފައިލްކުރި.</p>
+<p>ބޮޑެތި މީހުންގެ ކުށުގެ ރެކޯޑް ދާއިމީ އެއްޗެއް ގޮތުގައި ދެމިއޮތަސް، ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑަކީ ދާއިމީ އެއްޗެއްނޫންކަން މަތީގައި ބަޔާންވެފައިވާ މިސާލުން އެނގިގެންދެއެވެ. ޖުވެނައިލް ކޯޓަކީ ހަޤީޤަތުގައި ކްރިމިނަލް ކޯޓެއް ނޫންމެއެވެ. ޙަޤީޤަތުގައި ޖުވެނައިލް ކޯޓަކީ ކުށްކުރާ ކުޑަކުދިން ޤާނޫނީ އިމުގެ ތެރެއަށް ވައްދާ، ޑިސިޕްލިންކުރުމަށްޓަކައި ބެލެނިވެރިއެއްގެ ރޯލުއަދާކުރާ ކޯޓެކެވެ. ޖުވެނައިލް ކޯޓުގެ މަސައްކަތަކީ ކުށްކުރާ ކުޑަކުދިންނަށް އަދަބު ދިނުމެއްނޫނެވެ. އިސްލާޙްކުރުމެވެ. އަދަބުތައް އަންގައިދިނުމެވެ.</p>
+<p>ކުށުގެ ރެކޯޑް ފޮހެލުން ނުވަތަ (EXPUNGMENT) އަކީ މީހެއް ހައްޔަރުކުރިކަމުގެ ރެކޯޑް ނުވަތަ ދަޢުވާކުރެވިފައިވާ މައްސަލައެއްގެ ރެކޯޑެއް ކޯޓު އަމުރެއްގެ ދަށުން ފޮހެލުން ނުވަތަ ބަންދުކޮށްލުމެވެ. ބައެއްފަހަރު، މައްސަލަ ފައިލްކޮށްލުމަށްވެސް މިހެންކިޔައި އުޅެއެވެ. ދުނިޔޭގެ އެކި ޤައުމުތަކުގައި ކުށުގެ ރެކޯޑް "އެކްސްޕަންޖް" ކުރެވޭނެ ޙާލަތްތަކާ، ޝަރުޠުތައް ތަފާތެވެ. އެހެން ނަމަވެސް ކުށްކުރާ ކުޑަކުދިންގެ މައްސަލަތަކަކީ ހުރިހާ ޙާލަތެއްގައިވެސް "އެކްސްޕަންޖް" ކުރެވިފައިވާ ރެކޯޑްތަކެކެވެ. ކުށުގެ ރެކޯޑް މި ދެންނެވި ގޮތަށް ޤާނޫނުގެ ކުރިމަތީގައި ފޮހެލެވިއްޖެނަމަ، ކުށުގެ ރެކޯޑް ހޯދުމަށް ހުށަހަޅާއިރު އެބައިތަކެއް ހިމެނިފައިނުވާނެއެވެ.</p>
+<p>ދިވެހިރާއްޖޭގެ އެކި މުއައްސަސާތަކުން ކުށުގެ ރެކޯޑް ސާފުކޮށްދިނުން އެދުމަށް ހުށަހަޅާ ފޯމުގައި ޖުވެނައިލް ކޯޓުންވެސް ކުށުގެ ރެކޯޑް ސާފުކުރަން އޮތުމާއި، އަދި ބައެއްފަހަރު، ވަޒީފާއަށް ކުށުގެ ރެކޯޑް ސާފްކުރާއިރުގައްޔާއި، ސްކޮލާޝިޕްތަކަށް ކުރިމަތިލާއިރު ރެކޯޑް ސާފްކުރާ ފޯމުގައި ޖުވެނައިލް ކޯޓު އޮތުމުގެ ސަބަބުން ގިނަ ގުނަ ގޮންޖެހުންތަކެއް ކުދިންނަށް ކުރިމަތިވާކަން ފާހަގަކުރެވެއެވެ. ކުއްޖާ ކުށުގެ މާޙައުލާ ދުރުވެ މުޖުތަމަޢުގައި ބޭނުންތެރި ފަރުދަކަށްވާން މަސައްކަތްކުރާ ކޮންމެ ފަހަރަކު އޭނާގެ މާޒީގައި ކުރެވިފައިވާ އެންމެ ކުށެއްގެ ސަބަބުން އޭނައަށް ލިބެން ހުރި އެތަށް ފުރުޞަތުތަކުން މަޙްރޫމްވެގެންދެއެވެ. ޖުވެނައިލް ކޯޓުން ކުށުގެ ރެކޯޑް ފުރިހަމަނުކޮށްދޭއިރު، ބައެއް މުއައްސަސާތަކުން ކުދިންގެ ކުށުގެ ރެކޯޑް ސާފުކޮށްދޭކަން މަދުމަދުން ނަމަވެސް ފާހަގަކުރެވިފައިވެއެވެ.</p>
+<h2>ކުށުގެ ރެކޯޑް ސާފްކުރުން ހުއްޓުވާނެ ގޮތްތައް</h2>
+<p>ދުނިޔޭގެ ކުރިއަރާފައިވާ ޤައުމުތަކުގައި ކުށްކުރާ ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ރައްކާތެރިކުރުމަށްޓަކައި މައިގަނޑު ގޮތެއްގައި 3 ނިޒާމެއް ތަޢާރަފްކޮށް ކުރިއަރުވާފައިވެއެވެ. ފުރަތަމަ ގޮތަކީ (CONFIDENTIALITY STATUTES) ސިއްރު ހިފެހެއްޓުމުގެ ނިޒާމެވެ. މި ޤާނޫނުގެ ދަށުން ކުޑަކުދިންގެ ކުށްކުރުމުގެ މަޢުލޫމާތުތައް، ހޯދައި ބެލޭ މުއައްސަސާތަކާ ފަރާތްތަކުގެ ޢަދަދު މަދުކުރެވެއެވެ. ދެވަނަ ގޮތަކީ (EXTINGUISHING STATUTES) ކުށްކުރާ ކުޑަކުދިންގެ މަޢުލޫމާތު ޤާނޫނުގެ ކުރިމަތީގައި ފޮހެލުން ނުވަތަ "އެކްސްޕަންޖް" ކުރުމެވެ. މައިގަނޑު ގޮތެއްގައި މިކަންތައް ފުރިހަމަކުރާނީ މައްސަލަ ޖުވެނައިލް ކޯޓުން ނިންމާއިރުއެވެ. މުސްތަޤްބަލުގައި އެ މައްސަލައިގެ މަޢުލޫމާތު އެހެން ފަރާތަކަށް ނުފެންނަ ގޮތަށް ހެދުމެވެ. ތިންވަނަ ގޮތަކީ (NON-DISCLOSURE STATUTES) މަޢުލޫމާތު ހާމަނުކުރުމެވެ. މީގެ މިސާލަކީ ކުއްޖަކަށް އޭނާއަކީ މާޒިގައި ކުށުގެ ރެކޯޑެއް ނެތް މީހެއްކަމުގައި ބުނުމުގެ ފުރުޞަތު ދިނުމެވެ. މާނައަކީ ވަޒިފާއަކަށް ކުރިމަތިލާއިރު، އޭނާއަށް އެފަދަ ސުވާލެއް މީހަކު ކުރިމަތިކޮށްފިނަމަ ކުށެއްނުކުރާކަމަށް ބުނުމުގެ ފުރުޞަތު ލިބުމެވެ. މި ތިން ގޮތަކީ އެއްހަމައެއްގައި އެއްވަރަކަށް މަސައްކަތްކުރެވޭނެ ގޮތަށް ރޭވިފައި ހުންނަންޖެހޭނެ ފަދަ ނިޒާމަކަށްވާންވާނެއެވެ. އެއީ ކޮންމެ ނިޒާމެއްގައިވެސް "ލިމިޓޭޝަންތަކެއް" ހުރުމުގެ ސަބަބުން އެކަތި އަނެކައްޗާ ގުޅުވާލުމުން ހުރިހާ ނިޒާމެއް ގުޅިގެންދާނެތީއެވެ. އަދި "ލިމިޓޭޝަންތައް" މަދުކުރެވިގެންދާނެތީއެވެ.</p>
+<p>ދިވެހިރާއްޖޭގައި ޕްރެކްޓިސްކުރެވެމުންދާ ގޮތްތަކަށް ބަލާއިރު، ސިއްރު ހިފެހެއްޓުމުގެ ނިޒާމު ހަރުދަނާކަން ފާހަގަކުރެވެއެވެ. ސަބަބަކީ ކުށްކުރާ ކުދިންގެ މަޢުލޫމާތުތަކުގެ ލިޔެކިޔުންތައް ހޯދައި، ބެލޭ މުއައްސަސާތަކުގެ ޢަދަދު ނިޞްބަތުން މަދުވުމެވެ. އަދި ކުޑަކުދިންގެ މަޢުލޫމާތުތަކަކީ ބައެއް ޤައުމުތަކުގައިވާ ގޮތަށް ޕަބްލިކް ރެކޯޑްސް ގޮތުގައި ޝާޢިއުކުރެވިފައިވާ ތަކެއްޗަށް ނުވާތީވެސްމެއެވެ. ނަމަވެސް ކުށްކުރާ ކުޑަކުދިންގެ މަޢުލޫމާތު ފޮހެލުމުގެ ނިޒާމުގައި އަދިވެސް ގޮންޖެހުންތައް ހުރިކަން ފާހަގަކުރެވެއެވެ. މީގެ ސަބަބަކީ ފަހަރުގައި މުއައްސަސާތަކުގެ ޕޮލިސީގައި ހުރި ތަފާތުތަކެއްގެ ސަބަބުން ދިމާވާކަމެއް ކަމުގައިވެސް ވެދާނެއެވެ. މަތީގައި ދެންނެވިފައިވާ ތިން ނިޒާމުގެ ތެރެއިން ދައުލަތުން އެންމެ ބޮޑު ހިއްސާއެއްވާންޖެހޭ އަދި އެކަމަކަށް އެންމެ އަހައްމިއްޔަތުކަމެއްދޭންޖެހޭ ދެ ނިޒާމަކީ ސިއްރު ހިފެހެއްޓުމުގެ ނިޒާމާ، ކުށުގެ ރެކޯޑް ފޮހެލުމުގެ ނިޒާމެވެ. ތިންވަނަ ނިޒާމަކީ ކޮންމެ މީހެއްގެވެސް ޙައްޤާ ގުޅިފައިވާކަމަކަށްވާތީ، އެ ޙައްޤު ދޫކޮށްލުން ނުވަތަ އެ ޙައްޤުގެ ބޭނުންކުރުމުގެ ޒިންމާ އުފުލާނީ އެމީހެކެވެ.</p>
+<p>ކުށްކުރާ ކުޑަކުދިންގެ ކުށުގެ ރެކޯޑް ސާފްކުރުމާ ގުޅޭ ކަންތައްތަކުގައި "އެކްސްޕަންޖް" ކުރުމުގެ އިޙްތިޔާރު ލިބިގެންވާއިރު، ކުށުގެ ރެކޯޑް ސާފްކުރާ ފޯމްތަކުގެ "ޓެމްޕްލޭޓްތައް" އާ ކުރުން މުހިންމުކަން ފާހަގަކުރެވެއެވެ. ދައުލަތުގެ މުއައްސަސާއެއްގެ ކުށުގެ ރެކޯޑް ސާފްކުރާ ފޯމެއްގައިނަމަ ކުޑަކުދިންގެ މައްސަލަތަކުގެ ކުށުގެ ރެކޯޑް ސާފުނުކޮށްދެވޭނެކަމަށް ބަޔާންކުރެވިފައި އޮތުމާއި، ޖުވެނައިލް ކޯޓުން ނުވަތަ މެޖިސްޓްރޭޓް ކޯޓަކުންވެސް ކުޑަކުއްޖެއްގެ ކުށުގެ ރެކޯޑް ސާފުކޮށްނުދެވޭނެ ގޮތް ހެދުން ލާޒިމްކުރުން މުހިންމެވެ. އަދި އެއްވެސް ޙާލަތެއްގައި ކުޑަކުއްޖެއްގެ މާޒީގައި ކުރެވިފައިވާ ކުށަކާ ގުޅިގެން އޭނާއަށް ސުވާލުނުކުރުންފަދަ ކަންތައްތައްވެސް ހިމެނެއެވެ.</p>
+</div>`,
+    cover_image_url: null,
+    category_id: '1',
+    author_id: '4',
+    status: 'published',
+    is_featured: false,
+    read_time_minutes: 12,
+    tags: ['juvenile justice', 'record clearance', 'expungement'],
+    attachment_url: null,
+    meta_title: 'Juvenile Record Clearance in the Maldives | Aureus Law',
+    meta_description: 'An analysis of juvenile record clearance, confidentiality and expungement in the Maldives.',
+    published_at: '2026-11-24',
+    created_at: '2026-11-24',
+    updated_at: '2026-11-24',
+    category: articleCategories[0],
+    author: teamMembers[3]
+  },
+  {
+    id: '4',
     title: 'Understanding Employment Law in the Maldives',
     slug: 'understanding-employment-law-maldives',
     excerpt: 'A practical guide to employment rights, obligations, and compliance for businesses and workers in the Maldives.',
@@ -639,7 +771,7 @@ export const articles: Article[] = [
     category_id: '1',
     author_id: '2',
     status: 'published',
-    is_featured: true,
+    is_featured: false,
     read_time_minutes: 5,
     tags: ['employment law', 'HR', 'compliance'],
     attachment_url: null,
@@ -650,81 +782,15 @@ export const articles: Article[] = [
     updated_at: '2025-12-08',
     category: articleCategories[0],
     author: teamMembers[1]
-  },
-  {
-    id: '2',
-    title: 'Guide to Property Transactions in the Maldives',
-    slug: 'property-transactions-guide-maldives',
-    excerpt: 'A practical guide to property purchases, leases, and land matters in the Maldives, including due diligence requirements.',
-    content: '<p>Property matters in the Maldives involve unique legal considerations. Whether you are a local buyer, a business, or a foreign investor, understanding the legal framework is essential before entering any property transaction.</p><h2>Key Considerations</h2><p>Foreign nationals and companies can access property in the Maldives primarily through long-term lease arrangements. Due diligence is critical before completing any transaction.</p><h2>Due Diligence</h2><p>Before proceeding, it is important to verify ownership, review encumbrances, and confirm all necessary permits. Our team can guide you through the entire process.</p><p>Contact Aureus Law Firm LLP for property advisory and transactional support.</p>',
-    cover_image_url: null,
-    category_id: '4',
-    author_id: '1',
-    status: 'published',
-    is_featured: true,
-    read_time_minutes: 7,
-    tags: ['property law', 'real estate', 'due diligence'],
-    attachment_url: null,
-    meta_title: null,
-    meta_description: null,
-    published_at: '2025-12-08',
-    created_at: '2025-12-08',
-    updated_at: '2025-12-08',
-    category: articleCategories[3],
-    author: teamMembers[0]
-  },
-  {
-    id: '3',
-    title: 'Corporate Compliance for Maldivian Businesses',
-    slug: 'corporate-compliance-maldivian-businesses',
-    excerpt: 'What businesses operating in the Maldives need to know about regulatory compliance, governance, and risk management.',
-    content: '<p>Good corporate compliance is the foundation of sustainable business in the Maldives. Implementing robust governance practices builds trust with investors, partners, and regulators.</p><h2>Key Compliance Areas</h2><p>Businesses must comply with company law, employment regulations, tax obligations, and sector-specific rules. Clear internal policies and sound governance reduce risk significantly.</p><h2>Risk Management</h2><p>Establishing clear compliance frameworks helps companies identify and address issues before they escalate. Our team assists with compliance reviews and implementation of best practices.</p>',
-    cover_image_url: null,
-    category_id: '2',
-    author_id: '1',
-    status: 'published',
-    is_featured: false,
-    read_time_minutes: 6,
-    tags: ['corporate law', 'governance', 'compliance'],
-    attachment_url: null,
-    meta_title: null,
-    meta_description: null,
-    published_at: '2025-12-08',
-    created_at: '2025-12-08',
-    updated_at: '2025-12-08',
-    category: articleCategories[1],
-    author: teamMembers[0]
-  },
-  {
-    id: '4',
-    title: 'Tax Advisory in the Maldives: What You Need to Know',
-    slug: 'tax-advisory-maldives',
-    excerpt: 'An overview of tax obligations, dispute resolution, and compliance for businesses and individuals in the Maldives.',
-    content: '<p>Tax law in the Maldives has evolved significantly in recent years. Whether you are a business, a financial institution, or an individual, understanding your tax obligations is essential.</p><h2>Key Tax Obligations</h2><p>Businesses must comply with GST, Business Profit Tax (BPT), and other applicable taxes. Accurate filing and timely payment are critical to avoiding penalties.</p><h2>Tax Disputes</h2><p>When disputes arise with the tax authority, the Tax Appeal Tribunal provides a forum for resolution. Our team has deep experience in tax litigation and advisory at the highest levels.</p>',
-    cover_image_url: null,
-    category_id: '3',
-    author_id: '7',
-    status: 'published',
-    is_featured: false,
-    read_time_minutes: 8,
-    tags: ['tax law', 'compliance', 'advisory'],
-    attachment_url: null,
-    meta_title: null,
-    meta_description: null,
-    published_at: '2025-12-08',
-    created_at: '2025-12-08',
-    updated_at: '2025-12-08',
-    category: articleCategories[2],
-    author: teamMembers[6]
   }
 ]
 
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    client_name: 'Ibrahim Moosa',
-    client_title: 'CEO',
-    company_name: 'Island Resorts Group',
+    client_name: 'Mohamed Aslam Hassan',
+    client_title: 'Managing Director',
+    company_name: 'PROPERTYER Pvt Ltd & Beach Marine Pvt Ltd',
     content: 'Aureus Law has been our trusted legal partner. Their understanding of the Maldivian legal landscape and proactive approach to legal matters has been invaluable to our business.',
     rating: 5,
     practice_area_id: '1',
@@ -735,28 +801,15 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: '2',
-    client_name: 'Sarah Chen',
-    client_title: 'Regional Director',
-    company_name: 'Pacific Investments Ltd',
+    client_name: 'Ihusaan',
+    client_title: 'Managing Director',
+    company_name: 'Hutzz Private Limited',
     content: 'When we decided to invest in the Maldives, Aureus Law provided clear, practical guidance that made the process smooth. Their team understood our commercial objectives and delivered results.',
     rating: 5,
     practice_area_id: '1',
     is_featured: true,
     is_visible: true,
     sort_order: 2,
-    created_at: '2025-12-08'
-  },
-  {
-    id: '3',
-    client_name: 'Ahmed Saleem',
-    client_title: 'Managing Director',
-    company_name: 'Coral Construction',
-    content: 'The team at Aureus Law helped us navigate complex agreements and resolve a challenging dispute. Professional, thorough, and always available when needed.',
-    rating: 5,
-    practice_area_id: '6',
-    is_featured: true,
-    is_visible: true,
-    sort_order: 3,
     created_at: '2025-12-08'
   }
 ]

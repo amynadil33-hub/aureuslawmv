@@ -45,10 +45,10 @@ export function InsightsSection() {
                   </div>
 
                   <div className="p-6">
-                    <h3 className="font-serif text-lg font-medium text-navy group-hover:text-gold transition-colors line-clamp-2">
+                    <h3 dir="auto" className="font-serif text-lg font-medium text-navy group-hover:text-gold transition-colors line-clamp-2">
                       {article.title}
                     </h3>
-                    <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+                    <p dir="auto" className="mt-2 text-sm text-muted-foreground line-clamp-2">
                       {article.excerpt}
                     </p>
 

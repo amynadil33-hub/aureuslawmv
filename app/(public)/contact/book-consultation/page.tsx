@@ -22,6 +22,7 @@ export default function BookConsultationPage() {
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
+  const [notificationWarning, setNotificationWarning] = useState('')
 
   useEffect(() => {
     const loadOptions = async () => {
@@ -62,6 +63,32 @@ export default function BookConsultationPage() {
       setSubmitting(false)
       return
     }
+
+    try {
+      const notification = await fetch('/api/forms', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kind: 'consultation',
+          fullName: value('full_name'),
+          email: value('email'),
+          phone: value('phone'),
+          clientType,
+          companyName: value('company_name'),
+          practiceArea: practiceAreas.find((area) => area.id === practiceAreaId)?.name || 'Not sure',
+          preferredLawyer: lawyers.find((lawyer) => lawyer.id === lawyerId)?.name || 'No preference',
+          preferredDate: value('preferred_date'),
+          preferredTime: value('preferred_time'),
+          message: value('message'),
+          website: value('website'),
+        }),
+      })
+      if (!notification.ok) {
+        setNotificationWarning('Your request was saved, but the email notification could not be delivered. Please contact the firm directly if your matter is urgent.')
+      }
+    } catch {
+      setNotificationWarning('Your request was saved, but the email notification could not be delivered. Please contact the firm directly if your matter is urgent.')
+    }
     setSubmitted(true)
     setSubmitting(false)
   }
@@ -71,13 +98,14 @@ export default function BookConsultationPage() {
       <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
         <Link href="/contact" className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold"><ArrowLeft className="h-4 w-4" />Back to Contact</Link>
         {submitted ? (
-          <Card><CardContent className="p-10 text-center"><CheckCircle2 className="mx-auto h-14 w-14 text-gold" /><h1 className="mt-5 font-serif text-3xl font-semibold text-navy">Request Received</h1><p className="mx-auto mt-3 max-w-xl text-muted-foreground">Thank you. Your consultation request has been sent to Aureus Law Firm LLP. Our team will contact you to confirm the appointment.</p><Button asChild className="mt-8 bg-gold text-card hover:bg-gold-dark"><Link href="/">Return Home</Link></Button></CardContent></Card>
+          <Card><CardContent className="p-10 text-center"><CheckCircle2 className="mx-auto h-14 w-14 text-gold" /><h1 className="mt-5 font-serif text-3xl font-semibold text-navy">Request Received</h1><p className="mx-auto mt-3 max-w-xl text-muted-foreground">Thank you. Your consultation request has been sent to Aureus Law Firm LLP. Our team will contact you to confirm the appointment.</p>{notificationWarning && <p role="alert" className="mx-auto mt-4 max-w-xl rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">{notificationWarning}</p>}<Button asChild className="mt-8 bg-gold text-card hover:bg-gold-dark"><Link href="/">Return Home</Link></Button></CardContent></Card>
         ) : (
           <Card>
             <CardContent className="p-7 sm:p-10">
               <div className="mb-8 flex items-start gap-4"><div className="rounded-lg bg-gold/10 p-3"><CalendarDays className="h-6 w-6 text-gold" /></div><div><h1 className="font-serif text-3xl font-semibold text-navy">Book a Consultation</h1><p className="mt-2 text-muted-foreground">Tell us how we can help and suggest a convenient time.</p></div></div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 {error && <div role="alert" className="rounded-lg border border-destructive/20 bg-destructive/10 p-4 text-sm text-destructive">{error}</div>}
+                <div className="absolute -left-[10000px] h-px w-px overflow-hidden" aria-hidden="true"><Label htmlFor="consultation-website">Website</Label><Input id="consultation-website" name="website" tabIndex={-1} autoComplete="off" /></div>
                 <div className="grid gap-6 sm:grid-cols-2"><div className="space-y-2"><Label htmlFor="full_name">Full name *</Label><Input id="full_name" name="full_name" required /></div><div className="space-y-2"><Label htmlFor="email">Email *</Label><Input id="email" name="email" type="email" required /></div><div className="space-y-2"><Label htmlFor="phone">Phone</Label><Input id="phone" name="phone" type="tel" /></div><div className="space-y-2"><Label>Client type</Label><Select value={clientType} onValueChange={setClientType}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="individual">Individual</SelectItem><SelectItem value="business">Business</SelectItem><SelectItem value="institution">Institution</SelectItem></SelectContent></Select></div></div>
                 {clientType !== 'individual' && <div className="space-y-2"><Label htmlFor="company_name">Organisation name</Label><Input id="company_name" name="company_name" /></div>}
                 <div className="grid gap-6 sm:grid-cols-2"><div className="space-y-2"><Label>Practice area</Label><Select value={practiceAreaId} onValueChange={setPracticeAreaId}><SelectTrigger><SelectValue placeholder="Select a practice area" /></SelectTrigger><SelectContent><SelectItem value="none">Not sure</SelectItem>{practiceAreas.map((area) => <SelectItem key={area.id} value={area.id}>{area.name}</SelectItem>)}</SelectContent></Select></div><div className="space-y-2"><Label>Preferred lawyer</Label><Select value={lawyerId} onValueChange={setLawyerId}><SelectTrigger><SelectValue placeholder="Select a lawyer" /></SelectTrigger><SelectContent><SelectItem value="none">No preference</SelectItem>{lawyers.map((lawyer) => <SelectItem key={lawyer.id} value={lawyer.id}>{lawyer.name}</SelectItem>)}</SelectContent></Select></div></div>

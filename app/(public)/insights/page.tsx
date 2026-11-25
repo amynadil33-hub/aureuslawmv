@@ -24,16 +24,48 @@ const categories = ['All', ...new Set(blogPosts.map(p => p.category))]
 export default function InsightsPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All')
+  const [newsletterEmail, setNewsletterEmail] = useState('')
+  const [newsletterStatus, setNewsletterStatus] = useState('')
+  const [newsletterError, setNewsletterError] = useState('')
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState(false)
+
+  const handleNewsletterSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setNewsletterSubmitting(true)
+    setNewsletterStatus('')
+    setNewsletterError('')
+    const form = new FormData(event.currentTarget)
+    try {
+      const response = await fetch('/api/forms', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ kind: 'newsletter', email: newsletterEmail, website: form.get('website') }),
+      })
+      const result = (await response.json()) as { error?: string }
+      if (!response.ok) throw new Error(result.error)
+      setNewsletterStatus('Thank you. Your subscription request has been received.')
+      setNewsletterEmail('')
+    } catch (submissionError) {
+      setNewsletterError(submissionError instanceof Error && submissionError.message
+        ? submissionError.message
+        : 'We could not submit your subscription. Please try again.')
+    } finally {
+      setNewsletterSubmitting(false)
+    }
+  }
 
   const filteredPosts = blogPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+      (post.excerpt || '').toLowerCase().includes(searchQuery.toLowerCase())
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory
     return matchesSearch && matchesCategory && post.status === 'published'
   })
 
   const featuredPost = filteredPosts[0]
   const remainingPosts = filteredPosts.slice(1)
+  const featuredAuthor = featuredPost
+    ? teamMembers.find(member => member.id === featuredPost.author_id)
+    : null
 
   return (
     <main>
@@ -121,15 +153,21 @@ export default function InsightsPage() {
                 </Badge>
                 <Badge variant="outline">{featuredPost.category}</Badge>
               </div>
-              <h2 className="font-serif text-2xl lg:text-3xl font-semibold text-navy mb-4 text-balance">
+              <h2 dir="auto" className="font-serif text-2xl lg:text-3xl font-semibold text-navy mb-4 text-balance">
                 <Link href={`/insights/${featuredPost.slug}`} className="hover:text-gold transition-colors">
                   {featuredPost.title}
                 </Link>
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6 line-clamp-3">
+              <p dir="auto" className="text-muted-foreground leading-relaxed mb-6 line-clamp-3">
                 {featuredPost.excerpt}
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+                {featuredAuthor && (
+                  <span className="flex items-center gap-1">
+                    <User className="h-4 w-4" />
+                    {featuredAuthor.full_name}
+                  </span>
+                )}
                 <span className="flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
                   {formatDate(featuredPost.published_at || featuredPost.created_at)}
@@ -185,13 +223,13 @@ export default function InsightsPage() {
                     {post.category}
                   </Badge>
                   
-                  <h3 className="font-serif text-xl font-semibold text-navy mb-2 line-clamp-2 group-hover:text-gold transition-colors">
+                  <h3 dir="auto" className="font-serif text-xl font-semibold text-navy mb-2 line-clamp-2 group-hover:text-gold transition-colors">
                     <Link href={`/insights/${post.slug}`}>
                       {post.title}
                     </Link>
                   </h3>
                   
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
+                  <p dir="auto" className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
                     {post.excerpt}
                   </p>
                   
@@ -205,6 +243,13 @@ export default function InsightsPage() {
                       {post.read_time} min
                     </span>
                   </div>
+
+                  {author && (
+                    <div className="mt-3 flex items-center gap-1.5 text-sm text-muted-foreground">
+                      <User className="h-3.5 w-3.5" />
+                      <span>{author.full_name}</span>
+                    </div>
+                  )}
                 </motion.article>
               )
             })}
@@ -235,16 +280,23 @@ export default function InsightsPage() {
           <p className="text-stone-light/70 mb-8">
             Subscribe to our newsletter for the latest legal insights and updates delivered to your inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <form onSubmit={handleNewsletterSubmit} className="relative flex max-w-md flex-col gap-3 mx-auto sm:flex-row">
+            <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[10000px] h-px w-px overflow-hidden" />
             <Input
+              name="email"
               type="email"
+              required
+              value={newsletterEmail}
+              onChange={(event) => setNewsletterEmail(event.target.value)}
               placeholder="Enter your email"
               className="bg-navy-light border-navy-light text-stone-light placeholder:text-stone-light/50"
             />
-            <Button className="bg-gold hover:bg-gold-dark text-navy whitespace-nowrap">
-              Subscribe
+            <Button type="submit" disabled={newsletterSubmitting} className="bg-gold hover:bg-gold-dark text-navy whitespace-nowrap">
+              {newsletterSubmitting ? 'Submitting…' : 'Subscribe'}
             </Button>
           </form>
+          {newsletterStatus && <p role="status" className="mt-4 text-sm text-green-300">{newsletterStatus}</p>}
+          {newsletterError && <p role="alert" className="mt-4 text-sm text-red-300">{newsletterError}</p>}
         </div>
       </Section>
     </main>

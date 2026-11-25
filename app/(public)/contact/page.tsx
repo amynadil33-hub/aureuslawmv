@@ -15,14 +15,40 @@ import { contactInfo, practiceAreas, socialLinks } from '@/lib/demo-data'
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [subject, setSubject] = useState('')
+  const [error, setError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    setError('')
+    const form = new FormData(e.currentTarget)
+
+    try {
+      const response = await fetch('/api/forms', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kind: 'contact',
+          firstName: form.get('firstName'),
+          lastName: form.get('lastName'),
+          email: form.get('email'),
+          phone: form.get('phone'),
+          subject,
+          message: form.get('message'),
+          website: form.get('website'),
+        }),
+      })
+      const result = (await response.json()) as { error?: string }
+      if (!response.ok) throw new Error(result.error)
+      setIsSubmitted(true)
+    } catch (submissionError) {
+      setError(submissionError instanceof Error && submissionError.message
+        ? submissionError.message
+        : 'We could not send your message. Please try again or contact us directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -156,6 +182,11 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && <div role="alert" className="rounded-lg border border-destructive/20 bg-destructive/10 p-4 text-sm text-destructive">{error}</div>}
+                <div className="absolute -left-[10000px] h-px w-px overflow-hidden" aria-hidden="true">
+                  <Label htmlFor="contact-website">Website</Label>
+                  <Input id="contact-website" name="website" tabIndex={-1} autoComplete="off" />
+                </div>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name *</Label>
@@ -180,7 +211,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject *</Label>
-                  <Select name="subject" required>
+                  <Select value={subject} onValueChange={setSubject} required>
                     <SelectTrigger>
                       <SelectValue placeholder="Select a subject" />
                     </SelectTrigger>
