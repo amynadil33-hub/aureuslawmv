@@ -788,7 +788,7 @@ export const articles: Article[] = [
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    client_name: 'Mihammed Aslam Haasan',
+    client_name: 'Mohammed Aslam Hassan',
     client_title: 'Managing Director',
     company_name: 'PROPERTYER Pvt Ltd',
     content: 'Aureus Law has been our trusted legal partner. Their understanding of the Maldivian legal landscape and proactive approach to legal matters has been invaluable to our business.',
@@ -810,6 +810,19 @@ export const testimonials: Testimonial[] = [
     is_featured: true,
     is_visible: true,
     sort_order: 2,
+    created_at: '2025-12-08'
+  },
+  {
+    id: '3',
+    client_name: 'Aslam',
+    client_title: 'Managing Director',
+    company_name: 'Hutzz Pvt Ltd',
+    content: 'Aureus Law consistently provides responsive, commercially focused advice. Their professionalism and attention to detail give us confidence in navigating complex legal matters.',
+    rating: 5,
+    practice_area_id: '1',
+    is_featured: true,
+    is_visible: true,
+    sort_order: 3,
     created_at: '2025-12-08'
   }
 ]
