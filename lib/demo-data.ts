@@ -22,7 +22,7 @@ import type {
 export const contactInfo: ContactInfo = {
   phone: '+960 767 3636',
   email: 'hello@aureuslaw.mv',
-  address: 'Aureus Law, 4th Floor, Champa Building, Boduthakurufaanu Magu, Malé, Maldives 20026',
+  address: 'H. Sunflower, Unit 601, Vaijehey Magu, Malé City, Republic of Maldives',
   hours: 'Sunday - Thursday: 8:00 AM - 5:00 PM'
 }
 

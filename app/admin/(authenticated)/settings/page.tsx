@@ -150,16 +150,16 @@ export default function AdminSettingsPage() {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="address1">Address Line 1</Label>
-                <Input id="address1" defaultValue="5th Floor, H. Meerubahuruge" />
+                <Input id="address1" defaultValue="H. Sunflower, Unit 601" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="address2">Address Line 2</Label>
-                <Input id="address2" defaultValue="Meheli Goalhi" />
+                <Input id="address2" defaultValue="Vaijehey Magu" />
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="city">City</Label>
-                  <Input id="city" defaultValue="Malé" />
+                  <Input id="city" defaultValue="Malé City" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="country">Country</Label>
